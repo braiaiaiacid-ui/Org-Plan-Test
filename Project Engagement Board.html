@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <meta name="color-scheme" content="light dark">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.png" type="image/png">
     <title>Project Engagement Board</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&display=swap">
     <style>
@@ -920,7 +920,6 @@
             <a href="HC%20Planning%20Board.html">HC Planning</a><a href="Project%20Engagement%20Board.html"
      aria-current="page">Project Engagement</a>
           </nav>
-          <button id="saveVariantButton" class="save-variant-button" type="button">Save JSON</button>
           <select id="identitySelect" aria-label="Demo user" hidden></select>
           <span class="role-badge" id="roleBadge" hidden></span>
           <label class="theme-control">
@@ -932,7 +931,7 @@
         </div>
       </header>
       <div class="bar">
-        <button data-v="board">Board</button><button data-v="tl">Timeline</button><button id="ap" data-admin-only>Add project</button><button id="aint" data-admin-only>Add person</button><button id="aext" data-admin-only>Add external</button><button id="toggleProjectProperties" hidden>Hide properties</button><button id="cj">Copy JSON</button><button id="lj" data-admin-only>Load from JSON</button><input id="jsonFile" type="file" accept=".json,application/json" hidden><button id="rs" data-admin-only>Reset</button>
+        <button data-v="board">Board</button><button data-v="tl">Timeline</button><button id="ap" data-admin-only>Add project</button><button id="aint" data-admin-only>Add person</button><button id="aext" data-admin-only>Add external</button><button id="toggleProjectProperties" hidden>Hide properties</button><button id="saveVariantButton" class="save-variant-button" type="button">Save JSON</button><button id="cj">Copy JSON</button><button id="lj" data-admin-only>Load from JSON</button><input id="jsonFile" type="file" accept=".json,application/json" hidden><button id="rs" data-admin-only>Reset</button>
         <span id="msg" role="status" aria-live="polite"></span>
       </div>
       <div class="wrap" id="wrap">
