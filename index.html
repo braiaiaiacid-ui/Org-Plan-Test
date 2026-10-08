@@ -388,6 +388,16 @@
             .project.files[0].name : ''
         }
 
+        function requireVariantKey(value) {
+          if (typeof value.variantKey !== 'string' || !value.variantKey.trim()) throw new Error(
+            'This JSON file is missing a variant key. Save a new JSON variant from the board before loading it.');
+          var enteredKey = window.prompt('Enter the variant key for this JSON file to load it:', '');
+          if (enteredKey === null) throw new Error('JSON load cancelled.');
+          if (String(enteredKey).trim() !== value.variantKey.trim()) throw new Error(
+            'The entered variant key does not match this JSON file.');
+          return value
+        }
+
         function validateHC(value) {
           if (!value || !Array.isArray(value.phases) || !value.phases.length || !value.phases.every(
               function(phase) {
@@ -506,8 +516,9 @@
             return [key, localStorage.getItem(key)]
           });
           try {
-            var hcData = hcFile ? validateHC(JSON.parse(await hcFile.text())) : null,
-              projectData = projectFile ? validateProject(JSON.parse(await projectFile.text())) : null;
+            var hcData = hcFile ? requireVariantKey(validateHC(JSON.parse(await hcFile.text()))) : null,
+              projectData = projectFile ? requireVariantKey(validateProject(JSON.parse(await projectFile
+                .text()))) : null;
             if (hcData) localStorage.setItem(HC_KEY, JSON.stringify(hcData));
             else setFresh('hc');
             if (projectData) localStorage.setItem(projectKey, JSON.stringify(projectData));
