@@ -147,6 +147,26 @@
         margin-bottom: 0
       }
 
+      .save-variant-button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 7px 12px;
+        border: 1px solid var(--acc);
+        border-radius: 8px;
+        background: var(--acc);
+        color: var(--card);
+        font: inherit;
+        font-size: 12px;
+        font-weight: 600;
+        cursor: pointer
+      }
+
+      .save-variant-button:hover,
+      .save-variant-button:focus-visible {
+        filter: brightness(.96)
+      }
+
       .board-switch {
         display: inline-flex;
         flex: none;
@@ -900,9 +920,9 @@
             <a href="HC%20Planning%20Board.html">HC Planning</a><a href="Project%20Engagement%20Board.html"
      aria-current="page">Project Engagement</a>
           </nav>
-          <label class="identity-control" title="POC identity switch; this is not a login">
-            <span>Run Team</span><select id="identitySelect" aria-label="Demo user"></select><span class="role-badge" id="roleBadge"></span>
-          </label>
+          <button id="saveVariantButton" class="save-variant-button" type="button">Save JSON</button>
+          <select id="identitySelect" aria-label="Demo user" hidden></select>
+          <span class="role-badge" id="roleBadge" hidden></span>
           <label class="theme-control">
             <span>Light</span><input id="themeToggle"
          type="checkbox"

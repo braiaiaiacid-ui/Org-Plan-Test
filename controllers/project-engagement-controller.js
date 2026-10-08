@@ -29,6 +29,56 @@ function rid() {
   return 'x' + Math.random().toString(36).slice(2, 8)
 }
 
+function variantKeyPrefix(name) {
+  var base = String(name || 'VAR').toUpperCase().replace(/[^A-Z0-9]+/g, '-').replace(/^-+|-+$/g, '') || 'VAR';
+  return base.slice(0, 18)
+}
+
+function generateVariantKey(name) {
+  return variantKeyPrefix(name) + '-' + Date.now().toString(36).toUpperCase() + '-' + Math.random().toString(36).slice(2, 8).toUpperCase();
+}
+
+function addVariantMetadata(data, name) {
+  var payload = {};
+  var key = data && data.variantKey ? data.variantKey : generateVariantKey(name || BOARD_ID);
+  payload.variantKey = key;
+  payload.savedAt = new Date().toISOString();
+  payload.boardId = name || BOARD_ID;
+  Object.keys(data || {}).forEach(function(k) {
+    if (k !== 'variantKey' && k !== 'savedAt' && k !== 'boardId') payload[k] = data[k]
+  });
+  return payload
+}
+
+function promptForVariantKey(imported) {
+  if (!imported || typeof imported !== 'object') throw new Error('This file is not a valid Project Engagement Board JSON export.');
+  if (typeof imported.variantKey !== 'string' || !imported.variantKey.trim()) throw new Error('This JSON file is missing a variant key. Save a new JSON variant from the board before loading it.');
+  var value = window.prompt('Enter the variant key for this JSON file to load it:', '');
+  if (value === null) throw new Error('JSON load cancelled.');
+  if (String(value).trim() !== imported.variantKey.trim()) throw new Error('The entered variant key does not match this JSON file.');
+  return imported
+}
+
+function downloadVariantFile(data, name, successMessage) {
+  var payload = addVariantMetadata(data, name || BOARD_ID);
+  var fileName = 'variants/' + payload.variantKey + '.json';
+  var blob = new Blob([JSON.stringify(payload, null, 1)], {
+    type: 'application/json'
+  });
+  var url = window.URL.createObjectURL(blob);
+  var link = document.createElement('a');
+  link.href = url;
+  link.download = fileName;
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+  window.setTimeout(function() {
+    window.URL.revokeObjectURL(url)
+  }, 1000);
+  say(successMessage || ('Saved JSON variant ' + payload.variantKey + '.'));
+  return payload.variantKey
+}
+
 function esc(s) {
   return String(s == null ? '' : s).replace(/[&<>"]/g, function(c) {
     return {
@@ -1087,10 +1137,13 @@ $('aext').onclick = function() {
   if (!canManage()) return;
   addp('ext')
 };
+document.getElementById('saveVariantButton').onclick = function() {
+  downloadVariantFile(S, BOARD_ID, 'JSON variant saved to the variants folder.')
+};
 $('cj').onclick = function() {
   try {
-    navigator.clipboard.writeText(JSON.stringify(S, null, 1)).then(function() {
-      say('JSON copied.')
+    navigator.clipboard.writeText(JSON.stringify(addVariantMetadata(S, BOARD_ID), null, 1)).then(function() {
+      say('JSON copied with a variant key.')
     }, function() {
       say('Clipboard blocked here.')
     })
@@ -1114,6 +1167,7 @@ $('jsonFile').addEventListener('change', function(e) {
       var imported = JSON.parse(String(reader.result || ''));
       if (!validBoard(imported)) throw new Error(
         'This file is not a valid Project Engagement Board JSON export.');
+      promptForVariantKey(imported);
       if (!confirm('Load this JSON and replace the current board?')) {
         say('JSON load cancelled.');
         return
