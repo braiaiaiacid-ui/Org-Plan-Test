@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f3f8f5">
+    <title>Org Planner</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&display=swap">
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #f3f8f5;
+        --surface: #fff;
+        --ink: #173b31;
+        --muted: #5b766a;
+        --line: #d3e2d9;
+        --accent: #007a53;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        min-height: 100vh;
+        margin: 0;
+        background: var(--bg);
+        color: var(--ink);
+        font: 15px/1.5 "IBM Plex Sans", system-ui, sans-serif;
+      }
+
+      main {
+        width: min(100% - 40px, 900px);
+        margin: 0 auto;
+        padding: clamp(48px, 12vh, 112px) 0 48px;
+      }
+
+      .eyebrow {
+        margin: 0 0 10px;
+        color: var(--accent);
+        font-size: 12px;
+        font-weight: 500;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .brand-mark {
+        display: block;
+        width: 48px;
+        height: 48px;
+        margin-bottom: 24px;
+        overflow: hidden;
+        border-radius: 5px;
+      }
+
+      .brand-mark img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .brand-mark:focus-visible {
+        outline: 3px solid var(--accent);
+        outline-offset: 3px;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(30px, 5vw, 42px);
+        font-weight: 500;
+        line-height: 1.15;
+      }
+
+      .intro {
+        margin: 12px 0 32px;
+        color: var(--muted);
+      }
+
+      .tools {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 14px;
+      }
+
+      .tool {
+        display: flex;
+        min-height: 156px;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 22px;
+        border: 1px solid var(--line);
+        border-radius: 6px;
+        background: var(--surface);
+        color: inherit;
+        text-decoration: none;
+        transition: border-color 150ms ease, transform 150ms ease;
+      }
+
+      .tool:hover {
+        transform: translateY(-2px);
+        border-color: var(--accent);
+      }
+
+      .tool:focus-visible {
+        outline: 3px solid var(--accent);
+        outline-offset: 3px;
+      }
+
+      .tool h2 {
+        margin: 0;
+        font-size: 19px;
+        font-weight: 500;
+      }
+
+      .tool p {
+        max-width: 34ch;
+        margin: 8px 0 22px;
+        color: var(--muted);
+      }
+
+      .open-label {
+        color: var(--accent);
+        font-size: 13px;
+        font-weight: 500;
+      }
+
+      .setup {
+        margin: 0 0 30px;
+        padding: 22px;
+        border: 1px solid var(--line);
+        border-radius: 6px;
+        background: var(--surface);
+      }
+
+      .setup[hidden],
+      .tools[hidden] {
+        display: none;
+      }
+
+      .setup h2 {
+        margin: 0;
+        font-size: 22px;
+        font-weight: 500;
+      }
+
+      .setup-intro {
+        margin: 8px 0 20px;
+        color: var(--muted);
+      }
+
+      .setup-boards {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+      }
+
+      .setup-board {
+        min-width: 0;
+        margin: 0;
+        padding: 14px;
+        border: 1px solid var(--line);
+        border-radius: 4px;
+      }
+
+      .setup-board legend {
+        padding: 0 5px;
+        font-weight: 500;
+      }
+
+      .setup-status,
+      .file-name {
+        display: block;
+        margin: 0 0 10px;
+        color: var(--muted);
+        font-size: 13px;
+      }
+
+      .file-choice {
+        display: block;
+        font-size: 13px;
+        font-weight: 500;
+      }
+
+      .file-choice[hidden] {
+        display: none;
+      }
+
+      .file-choice input {
+        display: block;
+        width: 100%;
+        margin-top: 6px;
+        font: inherit;
+      }
+
+      .setup-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 18px;
+      }
+
+      .setup-actions button {
+        min-height: 40px;
+        padding: 8px 14px;
+        border: 1px solid var(--accent);
+        border-radius: 4px;
+        background: var(--accent);
+        color: #fff;
+        font: inherit;
+        cursor: pointer;
+      }
+
+      .setup-actions button.secondary {
+        background: var(--surface);
+        color: var(--accent);
+      }
+
+      .setup-actions button:disabled {
+        opacity: .5;
+        cursor: not-allowed;
+      }
+
+      .setup-message {
+        min-height: 1.5em;
+        margin: 12px 0 0;
+        color: var(--muted);
+      }
+
+      .setup-message.error {
+        color: #a43b32;
+      }
+
+      @media (max-width: 560px) {
+        main {
+          width: min(100% - 32px, 420px);
+        }
+
+        .tools {
+          grid-template-columns: 1fr;
+        }
+
+        .setup-boards {
+          grid-template-columns: 1fr;
+        }
+
+        .tool {
+          min-height: 140px;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+
+        *,
+        *::before,
+        *::after {
+          transition-duration: 0.01ms !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <a class="brand-mark" href="index.html" aria-label="Org Planner home">
+        <img src="Designer.png" alt="">
+      </a>
+      <p class="eyebrow">Planning tools</p>
+      <h1>Org Planner</h1>
+      <p class="intro">Choose a board to continue or set up a new plan.</p>
+
+      <section class="setup" id="setup" aria-labelledby="setup-title" hidden>
+        <p class="eyebrow">First-time setup</p>
+        <h2 id="setup-title">How would you like to start?</h2>
+        <p class="setup-intro">Start with fresh sample boards, or import a JSON file for either board. Existing saved boards will be left unchanged.</p>
+        <div class="setup-boards">
+          <fieldset class="setup-board">
+            <legend>HC Planning</legend>
+            <span class="setup-status" id="hcSetupStatus"></span>
+            <label class="file-choice" id="hcUpload">HC Planning JSON
+              <input id="hcFile" type="file" accept=".json,application/json">
+            </label>
+            <span class="file-name" id="hcFileName"></span>
+          </fieldset>
+          <fieldset class="setup-board">
+            <legend>Project Engagement</legend>
+            <span class="setup-status" id="projectSetupStatus"></span>
+            <label class="file-choice" id="projectUpload">Project Engagement JSON
+              <input id="projectFile" type="file" accept=".json,application/json">
+            </label>
+            <span class="file-name" id="projectFileName"></span>
+          </fieldset>
+        </div>
+        <div class="setup-actions">
+          <button id="startFresh" type="button">Start fresh</button>
+          <button id="importSelected" class="secondary" type="button" disabled>Import selected JSON</button>
+        </div>
+        <p class="setup-message" id="setupMessage" role="status" aria-live="polite"></p>
+      </section>
+
+      <nav class="tools" aria-label="Planning tools">
+        <a class="tool" data-board="hc" href="HC%20Planning%20Board.html">
+          <div>
+            <h2>HC Planning Board</h2>
+            <p>Plan headcount and team capacity.</p>
+          </div>
+          <span class="open-label">Open board</span>
+        </a>
+        <a class="tool" data-board="project" href="Project%20Engagement%20Board.html">
+          <div>
+            <h2>Project Engagement Board</h2>
+            <p>Organize project assignments and engagement.</p>
+          </div>
+          <span class="open-label">Open board</span>
+        </a>
+      </nav>
+    </main>
+    <script src="models/state-store.js"></script>
+    <script src="models/team-access.js"></script>
+    <script>
+      (function() {
+        var HC_KEY = 'abap-org-planner-v2',
+          PROJECT_LEGACY_KEY = 'alloc-board-v1',
+          HC_FRESH_KEY = 'org-planner-setup-hc-v1',
+          PROJECT_FRESH_KEY = 'org-planner-setup-project-v1',
+          projectTeamAccess = OrgPlanner.Models.createTeamAccess(),
+          projectKey = projectTeamAccess.boardKey('project-engagement'),
+          setup = document.getElementById('setup'),
+          tools = document.querySelector('.tools'),
+          setupMessage = document.getElementById('setupMessage'),
+          startFreshButton = document.getElementById('startFresh'),
+          importButton = document.getElementById('importSelected'),
+          requestedBoard = new URLSearchParams(location.search).get('setup'),
+          files = {
+            hc: document.getElementById('hcFile'),
+            project: document.getElementById('projectFile')
+          };
+
+        function hasState(key) {
+          try {
+            var raw = localStorage.getItem(key);
+            if (!raw) return false;
+            var value = JSON.parse(raw);
+            return !!value && typeof value === 'object'
+          } catch (error) {
+            return false
+          }
+        }
+
+        function configured(board) {
+          if (board === 'hc') return hasState(HC_KEY) || localStorage.getItem(HC_FRESH_KEY) === 'fresh';
+          return hasState(projectKey) || hasState(PROJECT_LEGACY_KEY) || localStorage.getItem(
+            PROJECT_FRESH_KEY) === 'fresh'
+        }
+
+        function updateBoardLabels() {
+          document.querySelectorAll('[data-board]').forEach(function(link) {
+            link.querySelector('.open-label').textContent = configured(link.dataset.board) ?
+              'Continue board' : 'Set up board'
+          })
+        }
+
+        function showSetup() {
+          var hcReady = configured('hc'),
+            projectReady = configured('project');
+          if (hcReady && projectReady) return false;
+          document.getElementById('hcSetupStatus').textContent = hcReady ?
+            'A saved board was found and will not be replaced.' : 'No saved board found.';
+          document.getElementById('projectSetupStatus').textContent = projectReady ?
+            'A saved board was found and will not be replaced.' : 'No saved board found.';
+          document.getElementById('hcUpload').hidden = hcReady;
+          document.getElementById('projectUpload').hidden = projectReady || !projectTeamAccess.canManage();
+          if (!projectReady && !projectTeamAccess.canManage()) {
+            document.getElementById('projectSetupStatus').textContent =
+              'Project setup requires an admin account.'
+          }
+          setup.hidden = false;
+          tools.hidden = true;
+          updateImportButton();
+          return true
+        }
+
+        function updateImportButton() {
+          importButton.disabled = !files.hc.files.length && !files.project.files.length;
+          document.getElementById('hcFileName').textContent = files.hc.files.length ? files.hc.files[0]
+            .name : '';
+          document.getElementById('projectFileName').textContent = files.project.files.length ? files
+            .project.files[0].name : ''
+        }
+
+        function validateHC(value) {
+          if (!value || !Array.isArray(value.phases) || !value.phases.length || !value.phases.every(
+              function(phase) {
+                return phase && Array.isArray(phase.people) && phase.people.every(function(person) {
+                  return person && Array.isArray(person.areas)
+                })
+              }) || !Array.isArray(value.areas) || !Array.isArray(value.attrs) || !Array.isArray(value
+              .zones) || !value.cfg || !Array.isArray(value.cfg.ph) || !value.pv || typeof value.pv !==
+            'object' || !Array.isArray(value.fx)) throw new Error(
+            'This file is not a valid HC Planning Board JSON export.');
+          if (!Number.isInteger(value.cur) || value.cur < 0 || value.cur >= value.phases.length) value
+            .cur = 0;
+          value.sel = null;
+          return value
+        }
+
+        function validateProject(value) {
+          if (!value || !Array.isArray(value.people) || !Array.isArray(value.projects) || !Array.isArray(
+              value.alloc)) throw new Error('This file is not a valid Project Engagement Board JSON export.');
+          var people = new Set(),
+            projects = new Set();
+          var validPeople = value.people.every(function(person) {
+            if (!person || typeof person.id !== 'string' || !person.id || typeof person.name !==
+              'string' || typeof person.role !== 'string' || typeof person.areas !== 'string' || ['int',
+                'ext'
+              ].indexOf(person.type) < 0 || !isFinite(Number(person.cap)) || people.has(person.id))
+              return false;
+            people.add(person.id);
+            return true
+          });
+          var validProjects = value.projects.every(function(project) {
+            if (!project || typeof project.id !== 'string' || !project.id || typeof project.name !==
+              'string' || typeof project.areas !== 'string' || !Array.isArray(project.dep) || !['s', 'e',
+                'need', 'x', 'y'
+              ].every(function(key) {
+                return isFinite(Number(project[key]))
+              }) || projects.has(project.id)) return false;
+            projects.add(project.id);
+            if (['Planned', 'Execution', 'Closed'].indexOf(project.status) < 0) project.status =
+              'Planned';
+            return true
+          });
+          if (!validPeople || !validProjects || !value.alloc.every(function(allocation) {
+              return allocation && typeof allocation.id === 'string' && people.has(allocation.p) &&
+                projects.has(allocation.j) && isFinite(Number(allocation.pct)) && Number(allocation.pct) >=
+                0
+            })) throw new Error('This file is not a valid Project Engagement Board JSON export.');
+          value.selP = null;
+          value.selJ = null;
+          value.open = value.open && typeof value.open === 'object' ? value.open : {};
+          value.view = value.view === 'tl' ? 'tl' : 'board';
+          if (typeof value.propertiesOpen !== 'boolean') value.propertiesOpen = true;
+          if (!isFinite(Number(value.zoom)) || Number(value.zoom) <= 0) value.zoom = 100;
+          value.people.forEach(function(person) {
+            if (person.type !== 'ext') return;
+            var fte = person.fte == null ? NaN : Number(person.fte);
+            if (!isFinite(fte) || fte < 0) fte = person.cap == null ? 1 : Math.max(0, Number(person
+              .cap) / 100);
+            person.fte = fte;
+            person.cap = fte * 100
+          });
+          return value
+        }
+
+        function setFresh(board) {
+          if (board === 'hc' && !configured('hc')) localStorage.setItem(HC_FRESH_KEY, 'fresh');
+          if (board === 'project' && !configured('project')) localStorage.setItem(PROJECT_FRESH_KEY,
+            'fresh')
+        }
+
+        function finishSetup() {
+          setup.hidden = true;
+          tools.hidden = false;
+          updateBoardLabels();
+          history.replaceState(null, '', location.pathname);
+          if (requestedBoard && configured(requestedBoard)) {
+            location.href = requestedBoard === 'hc' ? 'HC%20Planning%20Board.html' :
+              'Project%20Engagement%20Board.html'
+          }
+        }
+
+        Object.keys(files).forEach(function(board) {
+          files[board].addEventListener('change', updateImportButton)
+        });
+
+        document.querySelectorAll('[data-board]').forEach(function(link) {
+          link.addEventListener('click', function(event) {
+            if (configured(link.dataset.board)) return;
+            event.preventDefault();
+            requestedBoard = link.dataset.board;
+            showSetup()
+          })
+        });
+
+        startFreshButton.addEventListener('click', function() {
+          try {
+            setFresh('hc');
+            setFresh('project');
+            setupMessage.classList.remove('error');
+            setupMessage.textContent = 'Fresh sample boards are ready.';
+            finishSetup()
+          } catch (error) {
+            setupMessage.classList.add('error');
+            setupMessage.textContent = 'Could not save the setup choice in this browser.'
+          }
+        });
+
+        importButton.addEventListener('click', async function() {
+          var hcFile = files.hc.files[0],
+            projectFile = files.project.files[0];
+          if (!hcFile && !projectFile) return;
+          importButton.disabled = true;
+          setupMessage.classList.remove('error');
+          setupMessage.textContent = 'Checking selected JSON files...';
+          var previous = [HC_KEY, projectKey, HC_FRESH_KEY, PROJECT_FRESH_KEY].map(function(key) {
+            return [key, localStorage.getItem(key)]
+          });
+          try {
+            var hcData = hcFile ? validateHC(JSON.parse(await hcFile.text())) : null,
+              projectData = projectFile ? validateProject(JSON.parse(await projectFile.text())) : null;
+            if (hcData) localStorage.setItem(HC_KEY, JSON.stringify(hcData));
+            else setFresh('hc');
+            if (projectData) localStorage.setItem(projectKey, JSON.stringify(projectData));
+            else setFresh('project');
+            setupMessage.textContent = 'JSON loaded. Any board without a selected file will start fresh.';
+            finishSetup()
+          } catch (error) {
+            previous.forEach(function(item) {
+              if (item[1] === null) localStorage.removeItem(item[0]);
+              else localStorage.setItem(item[0], item[1])
+            });
+            setupMessage.classList.add('error');
+            setupMessage.textContent = error.message || 'Could not save the selected JSON files.'
+          } finally {
+            updateImportButton()
+          }
+        });
+
+        updateBoardLabels();
+        var shouldShow = requestedBoard && !configured(requestedBoard) || !configured('hc') && !configured(
+          'project');
+        if (shouldShow) showSetup()
+      })();
+    </script>
+  </body>
+</html>
