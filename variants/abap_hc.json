@@ -1,0 +1,2948 @@
+{
+ "title": "Organizational Planning",
+ "variant": "Sample variant",
+ "sampleLoaded": true,
+ "cur": 0,
+ "sel": null,
+ "areas": [
+  "QM",
+  "PM",
+  "EWM",
+  "HR",
+  "EHS",
+  "Auth",
+  "ILOL",
+  "COPE",
+  "A2R",
+  "O2C"
+ ],
+ "attrs": [
+  {
+   "n": "Seniority",
+   "t": "choice",
+   "o": "Junior,Mid,Senior"
+  },
+  {
+   "n": "Capacity %",
+   "t": "number",
+   "o": ""
+  },
+  {
+   "n": "Management",
+   "t": "checkbox",
+   "o": ""
+  },
+  {
+   "n": "Tech Lead",
+   "t": "checkbox",
+   "o": ""
+  },
+  {
+   "n": "Strategy Person",
+   "t": "strategy-person",
+   "o": ""
+  },
+  {
+   "n": "Annual cost",
+   "t": "number",
+   "o": ""
+  },
+  {
+   "n": "Notes",
+   "t": "text",
+   "o": ""
+  },
+  {
+   "n": "ABAP",
+   "t": "checkbox",
+   "o": ""
+  },
+  {
+   "n": "BTP",
+   "t": "checkbox",
+   "o": ""
+  }
+ ],
+ "pv": {
+  "t0": {
+   "Seniority": "Senior",
+   "Management": false,
+   "Tech Lead": true,
+   "Notes": "Development Guidelines, Clean Core Project with Solman Team",
+   "Capacity %": "100",
+   "ABAP": true,
+   "cardColor": "#5b7590"
+  },
+  "t1": {
+   "Seniority": "Senior",
+   "Management": false,
+   "Tech Lead": false,
+   "ABAP": true,
+   "BTP": true,
+   "Capacity %": "100",
+   "Strategy Person": "np5ltr95e"
+  },
+  "t2": {
+   "Seniority": "Senior",
+   "Management": false,
+   "Tech Lead": false,
+   "Strategy Person": "np5ltr95e"
+  },
+  "t3": {
+   "Seniority": "Senior",
+   "Management": false,
+   "Tech Lead": false,
+   "Capacity %": "100",
+   "Main Stack": true,
+   "Notes": "Lead GBS Japan Demands\nOversee GBS Hardening Implem",
+   "ABAP": true,
+   "Strategy Person": "np9cax3kk"
+  },
+  "t4": {
+   "Seniority": "Senior",
+   "Management": false,
+   "Tech Lead": false,
+   "Capacity %": "100",
+   "Strategy Person": "np9cax3kk"
+  },
+  "t5": {
+   "Seniority": "Senior",
+   "Management": false,
+   "Tech Lead": false,
+   "Strategy Person": "np9cax3kk"
+  },
+  "t6": {
+   "Seniority": "Senior",
+   "Management": false,
+   "Tech Lead": false,
+   "Strategy Person": "np9cax3kk"
+  },
+  "t7": {
+   "Seniority": "Senior",
+   "Management": false,
+   "Tech Lead": false
+  },
+  "h0": {
+   "Seniority": "Senior",
+   "Management": false,
+   "Tech Lead": false,
+   "Main Stack": true
+  },
+  "np9cax3kk": {
+   "Capacity %": "100",
+   "Management": true,
+   "Tech Lead": false,
+   "ABAP": true,
+   "cardColor": "#ae7e7e"
+  },
+  "npnigmg47": {
+   "Tech Lead": true,
+   "Management": false,
+   "Seniority": "Senior",
+   "BTP": true,
+   "Strategy Person": "np5ltr95e"
+  },
+  "h1": {
+   "Seniority": "Junior",
+   "Capacity %": "100",
+   "ABAP": true,
+   "Management": false,
+   "Tech Lead": false
+  },
+  "npxglbzmv": {
+   "ABAP": true,
+   "Seniority": "Senior",
+   "Management": false,
+   "Tech Lead": false
+  },
+  "npqufu2jz": {
+   "Seniority": "Senior",
+   "Capacity %": "50",
+   "ABAP": true,
+   "Management": false,
+   "Tech Lead": false
+  },
+  "npwjnt7r5": {
+   "Seniority": "Mid",
+   "ABAP": true,
+   "Management": false,
+   "Tech Lead": false,
+   "Strategy Person": "np9cax3kk"
+  },
+  "np5ltr95e": {
+   "Management": true,
+   "Capacity %": "100",
+   "Tech Lead": false,
+   "BTP": true,
+   "cardColor": "#77a789"
+  },
+  "npupu7icl": {
+   "ABAP": true,
+   "Management": false,
+   "Tech Lead": false,
+   "Seniority": "Senior"
+  },
+  "np9gudd1b": {
+   "ABAP": true,
+   "Management": false,
+   "Tech Lead": false,
+   "Seniority": "Senior"
+  },
+  "npzx69593": {
+   "ABAP": true,
+   "Management": false,
+   "Tech Lead": false,
+   "Seniority": "Senior"
+  },
+  "npfwemfiq": {
+   "ABAP": true,
+   "Management": false,
+   "Tech Lead": false
+  },
+  "npu28ozsq": {
+   "ABAP": true,
+   "Management": false,
+   "Tech Lead": false,
+   "Seniority": "Senior"
+  },
+  "npwdq7mot": {
+   "ABAP": true,
+   "Management": false,
+   "Tech Lead": false
+  },
+  "npvr67rpr": {
+   "ABAP": true,
+   "Management": false,
+   "Tech Lead": false
+  },
+  "np1xb612e": {
+   "BTP": false,
+   "Management": false,
+   "Tech Lead": false,
+   "ABAP": true
+  },
+  "npkzbib5m": {
+   "BTP": false,
+   "Management": false,
+   "Tech Lead": false,
+   "ABAP": true
+  },
+  "np0264cyj": {
+   "BTP": false,
+   "Management": false,
+   "Tech Lead": false,
+   "ABAP": true
+  },
+  "npd9p8322": {
+   "Seniority": "Junior",
+   "Management": false,
+   "Tech Lead": false,
+   "ABAP": true
+  },
+  "np2r51vfl": {
+   "Seniority": "Senior",
+   "Capacity %": "100",
+   "Tech Lead": true,
+   "Management": false,
+   "BTP": true,
+   "cardColor": "#5b7590"
+  },
+  "npysnhs58": {
+   "BTP": true,
+   "Management": false,
+   "Tech Lead": false,
+   "Seniority": "Senior",
+   "Strategy Person": "np5ltr95e"
+  },
+  "np2q1rg32": {
+   "BTP": true,
+   "Management": false,
+   "Tech Lead": false,
+   "Seniority": "Senior",
+   "Strategy Person": "np5ltr95e"
+  },
+  "npzagh4gq": {
+   "Seniority": "Junior",
+   "Strategy Person": "np5ltr95e",
+   "Management": false,
+   "Tech Lead": false
+  },
+  "npr23fqyg": {
+   "Strategy Person": "np5ltr95e",
+   "Management": false,
+   "Tech Lead": false,
+   "Seniority": "Junior"
+  },
+  "h8": {
+   "Strategy Person": "np9cax3kk",
+   "Management": false,
+   "Tech Lead": false
+  },
+  "npzmdsxo7": {
+   "Strategy Person": "np9cax3kk",
+   "Management": false,
+   "Tech Lead": false
+  },
+  "np1dzd0c4": {
+   "ABAP": true,
+   "Seniority": "Junior",
+   "Management": false,
+   "Tech Lead": false
+  },
+  "npfqns38u": {
+   "ABAP": true,
+   "Management": false,
+   "Tech Lead": false
+  },
+  "npf4i5hl8": {
+   "ABAP": true,
+   "Seniority": "Junior",
+   "Management": false,
+   "Tech Lead": false
+  },
+  "npv7109lo": {
+   "BTP": true,
+   "Management": false,
+   "Tech Lead": false
+  },
+  "npgc60fw3": {
+   "BTP": true,
+   "Management": false,
+   "Tech Lead": false
+  },
+  "npkovxyxd": {
+   "BTP": true,
+   "Management": false,
+   "Tech Lead": false
+  },
+  "npcsrtluh": {
+   "BTP": true,
+   "Management": false,
+   "Tech Lead": false
+  },
+  "npg7pyft9": {
+   "BTP": true,
+   "Management": false,
+   "Tech Lead": false
+  },
+  "np9g95oji": {
+   "BTP": true,
+   "Management": false,
+   "Tech Lead": false
+  },
+  "npedd8axk": {
+   "Strategy Person": "np5ltr95e",
+   "Management": false,
+   "Tech Lead": false
+  },
+  "npl18vjjz": {
+   "Strategy Person": "np5ltr95e",
+   "Annual cost": "40000",
+   "BTP": true,
+   "Management": false,
+   "Tech Lead": false
+  },
+  "np8dh070m": {
+   "Strategy Person": "np9cax3kk",
+   "Annual cost": "40000",
+   "ABAP": true,
+   "Management": false,
+   "Tech Lead": false
+  },
+  "npncip1l0": {
+   "Strategy Person": "np9cax3kk",
+   "Annual cost": "40000",
+   "ABAP": true,
+   "Management": false,
+   "Tech Lead": false
+  }
+ },
+ "cfg": {
+  "cur": "EUR",
+  "cap": 3,
+  "base": 29,
+  "ext": 80000,
+  "int": 65000,
+  "hire": 500,
+  "ph": [
+   {
+    "m": 6,
+    "t": 3,
+    "e": 25
+   },
+   {
+    "m": 5,
+    "t": 3,
+    "e": 15
+   },
+   {
+    "m": 5,
+    "t": 4,
+    "e": 10
+   }
+  ]
+ },
+ "fx": [
+  {
+   "n": "Internalization Costs and Transitions",
+   "k": "amt",
+   "v": 5000,
+   "f": 2,
+   "note": "Faster delivery from deeper functional knowledge"
+  }
+ ],
+ "zones": [
+  {
+   "id": "lead",
+   "t": "SAP Development Management",
+   "color": "#8aa83d"
+  },
+  {
+   "id": "gov",
+   "t": "Development Governance ",
+   "color": "#00856a"
+  },
+  {
+   "id": "fin",
+   "t": "A2R Focus",
+   "color": "#48ad05"
+  },
+  {
+   "id": "sd",
+   "t": "O2C Focus",
+   "color": "#48ad21"
+  },
+  {
+   "id": "pm",
+   "t": "QM Focus",
+   "color": "#2d7771"
+  },
+  {
+   "id": "log",
+   "t": "ILOL",
+   "color": "#8aa83d"
+  },
+  {
+   "id": "zpovwgntq",
+   "t": "GBS Hardening",
+   "tier": "strategy",
+   "color": "#006b4f"
+  },
+  {
+   "id": "zp4m7q2f7",
+   "t": "EHS/PM",
+   "tier": "strategy",
+   "color": "#00856a"
+  },
+  {
+   "id": "zps244eov",
+   "t": "Accenture (GBS Releases)",
+   "tier": "external",
+   "color": "#13ec80"
+  },
+  {
+   "id": "zpe9crylu",
+   "t": "Accenture (GBS DE)",
+   "tier": "external",
+   "color": "#9a7658"
+  },
+  {
+   "id": "zpzqbsrrx",
+   "t": "Legacy",
+   "tier": "strategy",
+   "color": "#8aa83d"
+  },
+  {
+   "id": "zp5ukwrzd",
+   "t": "Upcoming",
+   "tier": "strategy",
+   "color": "#f7f7f7"
+  },
+  {
+   "id": "zpd745ijp",
+   "t": "TOCS",
+   "tier": "strategy",
+   "color": "#6b613d"
+  },
+  {
+   "id": "zp3r069k6",
+   "t": "Sourcing Card ",
+   "tier": "strategy",
+   "color": "#77a789"
+  },
+  {
+   "id": "zppkeni4c",
+   "t": "Simon",
+   "tier": "strategy",
+   "color": "#006b4f"
+  },
+  {
+   "id": "zpzbpbrxc",
+   "t": "Fin Plan Apps",
+   "tier": "strategy",
+   "color": "#006b4f"
+  },
+  {
+   "id": "zpm3p6dqa",
+   "t": "Accenture (BTP) ",
+   "tier": "external",
+   "color": "#00856a"
+  },
+  {
+   "id": "zp28jlj7t",
+   "t": "Deloitte",
+   "tier": "external",
+   "color": "#2fa878"
+  },
+  {
+   "id": "ext",
+   "t": "Stefanini (PH)",
+   "color": "#facefd"
+  }
+ ],
+ "phases": [
+  {
+   "title": "Phase 1 · Oct 2026 to Apr 2027",
+   "note": "Current Assignments by end of 2026\nHiring starts with 2 new positions, 1 ABAP 1 BTP\nWhile 1 backfill from ABAP starts also\nTotal 3 new internal before Q2 ends",
+   "people": [
+    {
+     "id": "p49vqpfi",
+     "k": "t0",
+     "name": "Narayana Tagarathi",
+     "role": "ABAP Governance Lead",
+     "areas": [],
+     "all": true,
+     "zone": "gov",
+     "type": "internal",
+     "teamRole": "primary",
+     "internalKind": "tenured"
+    },
+    {
+     "id": "pi76ovey",
+     "k": "t1",
+     "name": "Bink Razon (BR)",
+     "role": "TecFcn - FinPlan",
+     "areas": [
+      "QM",
+      "A2R",
+      "O2C",
+      "COPE"
+     ],
+     "all": false,
+     "zone": "zpzbpbrxc",
+     "type": "internal",
+     "teamRole": "primary",
+     "internalKind": "tenured"
+    },
+    {
+     "id": "pj7t7ew6",
+     "k": "t2",
+     "name": "Bhernard Baruela (BB)",
+     "role": "TMS Development",
+     "areas": [
+      "EWM",
+      "ILOL",
+      "A2R"
+     ],
+     "all": false,
+     "zone": "log",
+     "type": "internal",
+     "teamRole": "primary",
+     "internalKind": "tenured"
+    },
+    {
+     "id": "p4exjyyq",
+     "k": "t3",
+     "name": "Kathrine Abesamis (KA)",
+     "role": "TecFcn A2R",
+     "areas": [
+      "Auth",
+      "A2R"
+     ],
+     "all": false,
+     "zone": "fin",
+     "type": "internal",
+     "teamRole": "primary",
+     "internalKind": "tenured"
+    },
+    {
+     "id": "ph0f4xpn",
+     "k": "t4",
+     "name": "Albert Panos (AP)",
+     "role": "TecFcn O2C Fiori App",
+     "areas": [
+      "QM",
+      "PM",
+      "O2C"
+     ],
+     "all": false,
+     "zone": "sd",
+     "type": "internal",
+     "teamRole": "primary",
+     "internalKind": "tenured"
+    },
+    {
+     "id": "p4wne5bl",
+     "k": "t5",
+     "name": "Montserrat Fabrega (MF)",
+     "role": "O2C Fiori ",
+     "areas": [
+      "PM",
+      "EHS",
+      "HR",
+      "O2C"
+     ],
+     "all": false,
+     "zone": "sd",
+     "type": "internal",
+     "teamRole": "primary",
+     "internalKind": "tenured"
+    },
+    {
+     "id": "p73qzsvt",
+     "k": "t6",
+     "name": "Arnie Alano (AA)",
+     "role": "TecFcn A2R",
+     "areas": [
+      "EWM",
+      "A2R"
+     ],
+     "all": false,
+     "zone": "fin",
+     "type": "internal",
+     "teamRole": "primary",
+     "internalKind": "tenured"
+    },
+    {
+     "id": "p9i1ev9j",
+     "k": "h1",
+     "name": "Maxine",
+     "role": "Audit Email",
+     "areas": [
+      "Auth",
+      "EHS"
+     ],
+     "all": false,
+     "zone": "ext",
+     "type": "external",
+     "useSpecificCost": true,
+     "externalCost": "13000"
+    },
+    {
+     "id": "pa1zsts8",
+     "k": "np9cax3kk",
+     "name": "Bryan Asedillo",
+     "role": "Head of SAP Dev Run",
+     "areas": [],
+     "all": false,
+     "zone": "lead",
+     "type": "internal",
+     "teamRole": "primary",
+     "internalKind": "tenured"
+    },
+    {
+     "id": "pu66bnjj",
+     "k": "npnigmg47",
+     "name": "Harjyot Sital (HS)",
+     "role": "BTP Governance Lead",
+     "areas": [],
+     "all": true,
+     "zone": "zpd745ijp",
+     "type": "internal",
+     "internalKind": "tenured",
+     "teamRole": "primary"
+    },
+    {
+     "id": "poz00s22",
+     "k": "np5ltr95e",
+     "name": "Albert Masdeu",
+     "role": "Head of SAP Dev Build",
+     "areas": [],
+     "all": false,
+     "zone": "lead",
+     "type": "internal",
+     "teamRole": "primary",
+     "internalKind": "tenured"
+    },
+    {
+     "id": "p42jwg0o",
+     "k": "npxglbzmv",
+     "name": "Jyothi",
+     "role": "HR Dev",
+     "areas": [
+      "HR"
+     ],
+     "all": false,
+     "zone": "zp28jlj7t",
+     "type": "external",
+     "useSpecificCost": true,
+     "externalCost": "60000"
+    },
+    {
+     "id": "poy89y8a",
+     "k": "npqufu2jz",
+     "name": "Dipesh Naik",
+     "role": "HR Dev",
+     "areas": [
+      "HR"
+     ],
+     "all": false,
+     "zone": "zp28jlj7t",
+     "type": "external",
+     "useSpecificCost": true,
+     "externalCost": "150000"
+    },
+    {
+     "id": "pnkairfu",
+     "k": "npwzr4txn",
+     "name": "Siva Rao",
+     "role": "IBIS & COPE",
+     "areas": [
+      "COPE",
+      "O2C",
+      "A2R"
+     ],
+     "all": false,
+     "zone": "zp28jlj7t",
+     "type": "external",
+     "useSpecificCost": true,
+     "externalCost": "100000"
+    },
+    {
+     "id": "px4ucx05",
+     "k": "np7od19jy",
+     "name": "AA",
+     "role": "IBIS Invoice, SolMan",
+     "areas": [],
+     "all": false,
+     "zone": "zpzqbsrrx",
+     "type": "internal",
+     "teamRole": "secondary",
+     "internalKind": "hire"
+    },
+    {
+     "id": "p2t0ultq",
+     "k": "npxriofay",
+     "name": "BP",
+     "role": "OS Support",
+     "areas": [],
+     "all": false,
+     "zone": "pm",
+     "type": "internal",
+     "teamRole": "secondary",
+     "internalKind": "hire"
+    },
+    {
+     "id": "pbe2oav5",
+     "k": "np1c6axuy",
+     "name": "MF",
+     "role": "O2C Dev Support",
+     "areas": [],
+     "all": false,
+     "zone": "sd",
+     "type": "internal",
+     "teamRole": "secondary",
+     "internalKind": "hire"
+    },
+    {
+     "id": "pav3ewny",
+     "k": "npmi8qd2m",
+     "name": "AP",
+     "role": "OS Support",
+     "areas": [],
+     "all": false,
+     "zone": "pm",
+     "type": "internal",
+     "teamRole": "secondary",
+     "internalKind": "hire"
+    },
+    {
+     "id": "perov8vq",
+     "k": "npw2f4ssp",
+     "name": "KA",
+     "role": "GBS Hardening",
+     "areas": [],
+     "all": false,
+     "zone": "zpovwgntq",
+     "type": "internal",
+     "teamRole": "secondary",
+     "internalKind": "hire"
+    },
+    {
+     "id": "pdlmtr9r",
+     "k": "npupu7icl",
+     "name": "Prathiba",
+     "role": "GBS Releases",
+     "areas": [
+      "PM"
+     ],
+     "all": false,
+     "zone": "zps244eov",
+     "type": "external",
+     "teamRole": "",
+     "useSpecificCost": true,
+     "externalCost": "9000"
+    },
+    {
+     "id": "p10ph0ik",
+     "k": "h1",
+     "name": "Maxine",
+     "role": "GBS Hardening",
+     "areas": [
+      "Auth",
+      "EHS"
+     ],
+     "all": false,
+     "zone": "zpovwgntq",
+     "type": "external",
+     "teamRole": "secondary",
+     "externalAssignment": true
+    },
+    {
+     "id": "pkbs7r17",
+     "k": "np9gudd1b",
+     "name": "Amruthavarshini",
+     "role": "GBS Releases",
+     "areas": [],
+     "all": false,
+     "zone": "zps244eov",
+     "type": "external",
+     "teamRole": "",
+     "useSpecificCost": true,
+     "externalCost": "9000"
+    },
+    {
+     "id": "p8mj2dqe",
+     "k": "npzx69593",
+     "name": "Tiwari",
+     "role": "GBS Releases",
+     "areas": [
+      "O2C"
+     ],
+     "all": false,
+     "zone": "zps244eov",
+     "type": "external",
+     "teamRole": "",
+     "useSpecificCost": true,
+     "externalCost": "9000"
+    },
+    {
+     "id": "paav5ohm",
+     "k": "npxglbzmv",
+     "name": "Jyothi",
+     "role": "HR Dev",
+     "areas": [
+      "HR"
+     ],
+     "all": false,
+     "zone": "zpzqbsrrx",
+     "type": "external",
+     "useSpecificCost": true,
+     "externalCost": "60000",
+     "teamRole": "secondary",
+     "externalAssignment": true
+    },
+    {
+     "id": "pivgticq",
+     "k": "npqufu2jz",
+     "name": "Dipesh Naik",
+     "role": "HR Dev",
+     "areas": [
+      "HR"
+     ],
+     "all": false,
+     "zone": "zpzqbsrrx",
+     "type": "external",
+     "useSpecificCost": true,
+     "externalCost": "150000",
+     "teamRole": "secondary",
+     "externalAssignment": true
+    },
+    {
+     "id": "pcws7e24",
+     "k": "npwzr4txn",
+     "name": "Siva Rao",
+     "role": "IBIS & COPE",
+     "areas": [],
+     "all": false,
+     "zone": "zpzqbsrrx",
+     "type": "external",
+     "useSpecificCost": true,
+     "externalCost": "100000",
+     "teamRole": "secondary",
+     "externalAssignment": true
+    },
+    {
+     "id": "plbvvw7q",
+     "k": "npu28ozsq",
+     "name": "Victor",
+     "role": "GBS Releases",
+     "areas": [],
+     "all": false,
+     "zone": "zps244eov",
+     "type": "external",
+     "teamRole": "",
+     "useSpecificCost": true,
+     "externalCost": "9000"
+    },
+    {
+     "id": "pjie3voa",
+     "k": "npfwemfiq",
+     "name": "Garima",
+     "role": "GBS Releases",
+     "areas": [],
+     "all": false,
+     "zone": "zps244eov",
+     "type": "external",
+     "teamRole": ""
+    },
+    {
+     "id": "ppam2lyv",
+     "k": "npwdq7mot",
+     "name": "Shraddha",
+     "role": "GBS Releases",
+     "areas": [],
+     "all": false,
+     "zone": "zps244eov",
+     "type": "external",
+     "teamRole": ""
+    },
+    {
+     "id": "p0pydw8c",
+     "k": "npvr67rpr",
+     "name": "Sanchita",
+     "role": "GBS Releases",
+     "areas": [
+      "O2C"
+     ],
+     "all": false,
+     "zone": "zps244eov",
+     "type": "external",
+     "teamRole": ""
+    },
+    {
+     "id": "p3p1atu8",
+     "k": "np1xb612e",
+     "name": "Madhulatha",
+     "role": "GBS Releases",
+     "areas": [],
+     "all": false,
+     "zone": "zps244eov",
+     "type": "external",
+     "teamRole": ""
+    },
+    {
+     "id": "p5nel6tp",
+     "k": "npkzbib5m",
+     "name": "Vijaya",
+     "role": "",
+     "areas": [
+      "EHS"
+     ],
+     "all": false,
+     "zone": "zps244eov",
+     "type": "external",
+     "teamRole": ""
+    },
+    {
+     "id": "p9twhlrt",
+     "k": "np0264cyj",
+     "name": "Maheswari",
+     "role": "GBS Releases",
+     "areas": [
+      "QM"
+     ],
+     "all": false,
+     "zone": "zps244eov",
+     "type": "external",
+     "teamRole": ""
+    },
+    {
+     "id": "pti1n39m",
+     "k": "h1",
+     "name": "Maxine",
+     "role": "Audit Email",
+     "areas": [
+      "Auth",
+      "EHS"
+     ],
+     "all": false,
+     "zone": "zp4m7q2f7",
+     "type": "external",
+     "teamRole": "secondary",
+     "externalAssignment": true
+    },
+    {
+     "id": "pbygvs2o",
+     "k": "npcw31x3b",
+     "name": "MF",
+     "role": "HR Oversight",
+     "areas": [
+      "HR"
+     ],
+     "all": false,
+     "zone": "zpzqbsrrx",
+     "type": "internal",
+     "teamRole": "secondary",
+     "internalKind": "hire"
+    },
+    {
+     "id": "ppptm08w",
+     "k": "np2r51vfl",
+     "name": "Tonye Atiegoba",
+     "role": "BTP Governance Lead",
+     "areas": [],
+     "all": false,
+     "zone": "gov",
+     "type": "internal",
+     "teamRole": "primary",
+     "internalKind": "hire"
+    },
+    {
+     "id": "p0ksx5ax",
+     "k": "npysnhs58",
+     "name": "Adria Casado (AC)",
+     "role": "BTP Developer",
+     "areas": [],
+     "all": false,
+     "zone": "zppkeni4c",
+     "type": "internal",
+     "teamRole": "primary",
+     "internalKind": "tenured"
+    },
+    {
+     "id": "p9fp288h",
+     "k": "np2q1rg32",
+     "name": "Savan Vekariya (SV)",
+     "role": "BTP Developer",
+     "areas": [],
+     "all": false,
+     "zone": "zp3r069k6",
+     "type": "internal",
+     "teamRole": "primary",
+     "internalKind": "tenured"
+    },
+    {
+     "id": "pf90tkuo",
+     "k": "npzagh4gq",
+     "name": "Carles Marcilla (CM)",
+     "role": "BTP Developer",
+     "areas": [],
+     "all": false,
+     "zone": "zp3r069k6",
+     "type": "internal",
+     "teamRole": "primary",
+     "internalKind": "tenured"
+    },
+    {
+     "id": "pgm7cf2x",
+     "k": "nphkq280n",
+     "name": "BB - A2R Fiori",
+     "role": "",
+     "areas": [],
+     "all": false,
+     "zone": "fin",
+     "type": "internal",
+     "teamRole": "secondary",
+     "internalKind": "hire"
+    },
+    {
+     "id": "pzylfzjn",
+     "k": "npr23fqyg",
+     "name": "Tom Engels (TE)",
+     "role": "BTP Developer",
+     "areas": [],
+     "all": false,
+     "zone": "zppkeni4c",
+     "type": "internal",
+     "teamRole": "primary",
+     "internalKind": "tenured"
+    },
+    {
+     "id": "p1wmg11n",
+     "k": "npnyw7xo0",
+     "name": "MF",
+     "role": "Spare Parts, Audit Dev",
+     "areas": [],
+     "all": false,
+     "zone": "zp4m7q2f7",
+     "type": "internal",
+     "teamRole": "secondary",
+     "internalKind": "hire"
+    },
+    {
+     "id": "pgesec41",
+     "k": "npjx4wdqn",
+     "name": "AP",
+     "role": "Spare Parts",
+     "areas": [],
+     "all": false,
+     "zone": "zp4m7q2f7",
+     "type": "internal",
+     "teamRole": "secondary",
+     "internalKind": "hire"
+    },
+    {
+     "id": "pcqj6vrc",
+     "k": "np1dzd0c4",
+     "name": "Vidhya",
+     "role": "SolMan",
+     "areas": [],
+     "all": false,
+     "zone": "zps244eov",
+     "type": "external",
+     "internalKind": "",
+     "teamRole": ""
+    },
+    {
+     "id": "ps1ea5es",
+     "k": "npfqns38u",
+     "name": "Hapsa",
+     "role": "Bundle",
+     "areas": [],
+     "all": false,
+     "zone": "zps244eov",
+     "type": "external",
+     "internalKind": "",
+     "teamRole": ""
+    },
+    {
+     "id": "p85olyzl",
+     "k": "npwk94yrj",
+     "name": "Rutuja",
+     "role": "GBS DE and Hardening",
+     "areas": [],
+     "all": false,
+     "zone": "zpe9crylu",
+     "type": "external",
+     "internalKind": "",
+     "teamRole": ""
+    },
+    {
+     "id": "p29yhlm2",
+     "k": "npwk94yrj",
+     "name": "Rutuja",
+     "role": "GBS DE and Hardening",
+     "areas": [],
+     "all": false,
+     "zone": "zpovwgntq",
+     "type": "external",
+     "internalKind": "",
+     "teamRole": "secondary",
+     "externalAssignment": true
+    },
+    {
+     "id": "p1g7hd5f",
+     "k": "npz6ao94v",
+     "name": "Mayra",
+     "role": "",
+     "areas": [],
+     "all": false,
+     "zone": "zpe9crylu",
+     "type": "external",
+     "internalKind": "",
+     "teamRole": ""
+    },
+    {
+     "id": "pmpkkkmp",
+     "k": "np0jvkind",
+     "name": "Spandana",
+     "role": "",
+     "areas": [],
+     "all": false,
+     "zone": "zpe9crylu",
+     "type": "external",
+     "internalKind": "",
+     "teamRole": ""
+    },
+    {
+     "id": "px34ypiu",
+     "k": "npbagvzoa",
+     "name": "Roman",
+     "role": "",
+     "areas": [],
+     "all": false,
+     "zone": "zpe9crylu",
+     "type": "external",
+     "internalKind": "",
+     "teamRole": ""
+    },
+    {
+     "id": "pbn0dam5",
+     "k": "npup4hqge",
+     "name": "D Raju",
+     "role": "",
+     "areas": [],
+     "all": false,
+     "zone": "zpe9crylu",
+     "type": "external",
+     "internalKind": "",
+     "teamRole": ""
+    },
+    {
+     "id": "pgi16fme",
+     "k": "np9g95oji",
+     "name": "Sam",
+     "role": "WeSave, Vistext Plus",
+     "areas": [],
+     "all": false,
+     "zone": "zpm3p6dqa",
+     "type": "external",
+     "internalKind": "",
+     "teamRole": ""
+    },
+    {
+     "id": "pqaeutjy",
+     "k": "npg7pyft9",
+     "name": "Pauline",
+     "role": "ECLASS, Anomaly Detection",
+     "areas": [],
+     "all": false,
+     "zone": "zpm3p6dqa",
+     "type": "external",
+     "internalKind": "",
+     "teamRole": ""
+    },
+    {
+     "id": "prgtgg4q",
+     "k": "npcsrtluh",
+     "name": "Navneesh",
+     "role": "Sourcing Card, Vistex Plus",
+     "areas": [],
+     "all": false,
+     "zone": "zpm3p6dqa",
+     "type": "external",
+     "internalKind": "",
+     "teamRole": ""
+    },
+    {
+     "id": "piqkizn7",
+     "k": "npkovxyxd",
+     "name": "Allison",
+     "role": "SEP Cockpit",
+     "areas": [],
+     "all": false,
+     "zone": "zpm3p6dqa",
+     "type": "external",
+     "internalKind": "",
+     "teamRole": ""
+    },
+    {
+     "id": "panvjygi",
+     "k": "npgc60fw3",
+     "name": "Alicia",
+     "role": "STTS",
+     "areas": [],
+     "all": false,
+     "zone": "zpm3p6dqa",
+     "type": "external",
+     "internalKind": "",
+     "teamRole": ""
+    },
+    {
+     "id": "ptsauh57",
+     "k": "npv7109lo",
+     "name": "Jakeer",
+     "role": "TOCS",
+     "areas": [],
+     "all": false,
+     "zone": "zpm3p6dqa",
+     "type": "external",
+     "internalKind": "",
+     "teamRole": ""
+    },
+    {
+     "id": "pqjg4tup",
+     "k": "npedd8axk",
+     "name": "Faye Adao (FA)",
+     "role": "Anomaly Detection",
+     "areas": [
+      "A2R"
+     ],
+     "all": false,
+     "zone": "zpzbpbrxc",
+     "type": "internal",
+     "internalKind": "hire",
+     "teamRole": "primary"
+    },
+    {
+     "id": "p6apzax1",
+     "k": "npncip1l0",
+     "name": "ABAP Backfill",
+     "role": "Legacy, Clean Core",
+     "areas": [],
+     "all": false,
+     "zone": "zp5ukwrzd",
+     "type": "internal",
+     "internalKind": "hire",
+     "teamRole": "primary"
+    },
+    {
+     "id": "p0kss73h",
+     "k": "np8dh070m",
+     "name": "ABAP Internalization 1",
+     "role": "",
+     "areas": [],
+     "all": false,
+     "zone": "zp5ukwrzd",
+     "type": "internal",
+     "internalKind": "hire",
+     "teamRole": "primary"
+    },
+    {
+     "id": "p6rq37b6",
+     "k": "npl18vjjz",
+     "name": "BTP Internalization 1",
+     "role": "",
+     "areas": [],
+     "all": false,
+     "zone": "zp5ukwrzd",
+     "type": "internal",
+     "internalKind": "hire",
+     "teamRole": "primary"
+    }
+   ]
+  },
+  {
+   "title": "Phase 2 · May 2027 to Jan 2028",
+   "note": "Pods formed, batch 2 (4 hires). Externals down about 55%.",
+   "people": [
+    {
+     "id": "pp9wjy70",
+     "k": "t0",
+     "name": "Narayana Tagarathi",
+     "role": "ABAP Governance Lead",
+     "areas": [],
+     "all": true,
+     "zone": "gov",
+     "type": "internal",
+     "teamRole": "primary",
+     "internalKind": "tenured"
+    },
+    {
+     "id": "pbq7nvss",
+     "k": "t1",
+     "name": "Bink Razon (BR)",
+     "role": "TecFcn - FinPlan",
+     "areas": [
+      "QM",
+      "A2R",
+      "O2C",
+      "COPE"
+     ],
+     "all": false,
+     "zone": "zpzbpbrxc",
+     "type": "internal",
+     "teamRole": "primary",
+     "internalKind": "tenured"
+    },
+    {
+     "id": "p6xdx0bh",
+     "k": "t2",
+     "name": "Bhernard Baruela (BB)",
+     "role": "TMS Development",
+     "areas": [
+      "EWM",
+      "ILOL",
+      "A2R"
+     ],
+     "all": false,
+     "zone": "log",
+     "type": "internal",
+     "teamRole": "primary",
+     "internalKind": "tenured"
+    },
+    {
+     "id": "p7z7k2nv",
+     "k": "t3",
+     "name": "Kathrine Abesamis (KA)",
+     "role": "TecFcn A2R",
+     "areas": [
+      "Auth",
+      "A2R"
+     ],
+     "all": false,
+     "zone": "fin",
+     "type": "internal",
+     "teamRole": "primary",
+     "internalKind": "tenured"
+    },
+    {
+     "id": "p57oz8r3",
+     "k": "t4",
+     "name": "Albert Panos (AP)",
+     "role": "TecFcn O2C Fiori App",
+     "areas": [
+      "QM",
+      "PM",
+      "O2C"
+     ],
+     "all": false,
+     "zone": "sd",
+     "type": "internal",
+     "teamRole": "primary",
+     "internalKind": "tenured"
+    },
+    {
+     "id": "p5avpxt9",
+     "k": "t5",
+     "name": "Montserrat Fabrega (MF)",
+     "role": "O2C Fiori ",
+     "areas": [
+      "PM",
+      "EHS",
+      "HR",
+      "O2C"
+     ],
+     "all": false,
+     "zone": "sd",
+     "type": "internal",
+     "teamRole": "primary",
+     "internalKind": "tenured"
+    },
+    {
+     "id": "pk0lzmhr",
+     "k": "t6",
+     "name": "Arnie Alano (AA)",
+     "role": "TecFcn A2R",
+     "areas": [
+      "EWM",
+      "A2R"
+     ],
+     "all": false,
+     "zone": "fin",
+     "type": "internal",
+     "teamRole": "primary",
+     "internalKind": "tenured"
+    },
+    {
+     "id": "prtwmfmc",
+     "k": "h1",
+     "name": "Maxine",
+     "role": "Audit Email",
+     "areas": [
+      "Auth",
+      "EHS"
+     ],
+     "all": false,
+     "zone": "ext",
+     "type": "external"
+    },
+    {
+     "id": "pek7wapt",
+     "k": "h8",
+     "name": "Internalization 1",
+     "role": "Core Developer",
+     "areas": [],
+     "all": false,
+     "zone": "zp5ukwrzd",
+     "type": "planned",
+     "teamRole": "primary"
+    },
+    {
+     "id": "p85lsv3b",
+     "k": "np9cax3kk",
+     "name": "Bryan Asedillo",
+     "role": "Head of SAP Dev Run",
+     "areas": [],
+     "all": false,
+     "zone": "lead",
+     "type": "internal",
+     "teamRole": "primary",
+     "internalKind": "tenured"
+    },
+    {
+     "id": "p3p01owf",
+     "k": "npnigmg47",
+     "name": "Harjyot Sital",
+     "role": "BTP Governance Lead",
+     "areas": [],
+     "all": true,
+     "zone": "zpd745ijp",
+     "type": "internal",
+     "internalKind": "tenured",
+     "teamRole": "primary"
+    },
+    {
+     "id": "pd7liveq",
+     "k": "np5ltr95e",
+     "name": "Albert Masdeu",
+     "role": "Head of SAP Dev Build",
+     "areas": [],
+     "all": false,
+     "zone": "lead",
+     "type": "internal",
+     "teamRole": "primary",
+     "internalKind": "tenured"
+    },
+    {
+     "id": "pjc8xr8y",
+     "k": "npwjnt7r5",
+     "name": "ABAP - Backfill",
+     "role": "Core Developer",
+     "areas": [],
+     "all": false,
+     "zone": "zp5ukwrzd",
+     "type": "internal",
+     "teamRole": "primary",
+     "internalKind": "hire"
+    },
+    {
+     "id": "p20hngc4",
+     "k": "npxglbzmv",
+     "name": "Jyothi",
+     "role": "HR Dev",
+     "areas": [
+      "HR"
+     ],
+     "all": false,
+     "zone": "zp28jlj7t",
+     "type": "external",
+     "useSpecificCost": true,
+     "externalCost": "60000"
+    },
+    {
+     "id": "pnzffqjd",
+     "k": "npqufu2jz",
+     "name": "Dipesh Naik",
+     "role": "HR Dev",
+     "areas": [
+      "HR"
+     ],
+     "all": false,
+     "zone": "zp28jlj7t",
+     "type": "external",
+     "useSpecificCost": true,
+     "externalCost": "150000"
+    },
+    {
+     "id": "pf17eqkb",
+     "k": "npwzr4txn",
+     "name": "Siva Rao",
+     "role": "IBIS & COPE",
+     "areas": [
+      "COPE",
+      "O2C",
+      "A2R"
+     ],
+     "all": false,
+     "zone": "zp28jlj7t",
+     "type": "external",
+     "useSpecificCost": true,
+     "externalCost": "100000"
+    },
+    {
+     "id": "ptt31han",
+     "k": "np7od19jy",
+     "name": "AA",
+     "role": "IBIS Invoice, SolMan",
+     "areas": [],
+     "all": false,
+     "zone": "zpzqbsrrx",
+     "type": "internal",
+     "teamRole": "secondary",
+     "internalKind": "hire"
+    },
+    {
+     "id": "ppphu05e",
+     "k": "npxriofay",
+     "name": "BP",
+     "role": "OS Support",
+     "areas": [],
+     "all": false,
+     "zone": "pm",
+     "type": "internal",
+     "teamRole": "secondary",
+     "internalKind": "hire"
+    },
+    {
+     "id": "pqyz9dw9",
+     "k": "np1c6axuy",
+     "name": "MF",
+     "role": "O2C Dev Support",
+     "areas": [],
+     "all": false,
+     "zone": "sd",
+     "type": "internal",
+     "teamRole": "secondary",
+     "internalKind": "hire"
+    },
+    {
+     "id": "p4nbvqtn",
+     "k": "npmi8qd2m",
+     "name": "AP",
+     "role": "OS Support",
+     "areas": [],
+     "all": false,
+     "zone": "pm",
+     "type": "internal",
+     "teamRole": "secondary",
+     "internalKind": "hire"
+    },
+    {
+     "id": "prt6puu1",
+     "k": "npw2f4ssp",
+     "name": "KA",
+     "role": "GBS Hardening",
+     "areas": [],
+     "all": false,
+     "zone": "zpovwgntq",
+     "type": "internal",
+     "teamRole": "secondary",
+     "internalKind": "hire"
+    },
+    {
+     "id": "pdic0iv0",
+     "k": "npupu7icl",
+     "name": "Prathiba",
+     "role": "GBS Releases",
+     "areas": [
+      "PM"
+     ],
+     "all": false,
+     "zone": "zps244eov",
+     "type": "external",
+     "teamRole": "",
+     "useSpecificCost": true,
+     "externalCost": "9000"
+    },
+    {
+     "id": "pmv5jy0g",
+     "k": "h1",
+     "name": "Maxine",
+     "role": "GBS Hardening",
+     "areas": [
+      "Auth",
+      "EHS"
+     ],
+     "all": false,
+     "zone": "zpovwgntq",
+     "type": "external",
+     "teamRole": "secondary",
+     "externalAssignment": true
+    },
+    {
+     "id": "pjs0c0d6",
+     "k": "np9gudd1b",
+     "name": "Amruthavarshini",
+     "role": "GBS Releases",
+     "areas": [],
+     "all": false,
+     "zone": "zps244eov",
+     "type": "external",
+     "teamRole": "",
+     "useSpecificCost": true,
+     "externalCost": "9000"
+    },
+    {
+     "id": "p7t37qem",
+     "k": "npzx69593",
+     "name": "Tiwari",
+     "role": "GBS Releases",
+     "areas": [
+      "O2C"
+     ],
+     "all": false,
+     "zone": "zps244eov",
+     "type": "external",
+     "teamRole": "",
+     "useSpecificCost": true,
+     "externalCost": "9000"
+    },
+    {
+     "id": "p000fved",
+     "k": "npxglbzmv",
+     "name": "Jyothi",
+     "role": "HR Dev",
+     "areas": [
+      "HR"
+     ],
+     "all": false,
+     "zone": "zpzqbsrrx",
+     "type": "external",
+     "useSpecificCost": true,
+     "externalCost": "60000",
+     "teamRole": "secondary",
+     "externalAssignment": true
+    },
+    {
+     "id": "phvkzb03",
+     "k": "npqufu2jz",
+     "name": "Dipesh Naik",
+     "role": "HR Dev",
+     "areas": [
+      "HR"
+     ],
+     "all": false,
+     "zone": "zpzqbsrrx",
+     "type": "external",
+     "useSpecificCost": true,
+     "externalCost": "150000",
+     "teamRole": "secondary",
+     "externalAssignment": true
+    },
+    {
+     "id": "p8dv1g9x",
+     "k": "npwzr4txn",
+     "name": "Siva Rao",
+     "role": "IBIS & COPE",
+     "areas": [],
+     "all": false,
+     "zone": "zpzqbsrrx",
+     "type": "external",
+     "useSpecificCost": true,
+     "externalCost": "100000",
+     "teamRole": "secondary",
+     "externalAssignment": true
+    },
+    {
+     "id": "pxa43wga",
+     "k": "npu28ozsq",
+     "name": "Victor",
+     "role": "GBS Releases",
+     "areas": [],
+     "all": false,
+     "zone": "zps244eov",
+     "type": "external",
+     "teamRole": "",
+     "useSpecificCost": true,
+     "externalCost": "9000"
+    },
+    {
+     "id": "pqzug6hm",
+     "k": "npfwemfiq",
+     "name": "Garima",
+     "role": "GBS Releases",
+     "areas": [],
+     "all": false,
+     "zone": "zps244eov",
+     "type": "external",
+     "teamRole": ""
+    },
+    {
+     "id": "pwl6m581",
+     "k": "npwdq7mot",
+     "name": "Shraddha",
+     "role": "GBS Releases",
+     "areas": [],
+     "all": false,
+     "zone": "zps244eov",
+     "type": "external",
+     "teamRole": ""
+    },
+    {
+     "id": "pbe1gpwy",
+     "k": "npvr67rpr",
+     "name": "Sanchita",
+     "role": "GBS Releases",
+     "areas": [
+      "O2C"
+     ],
+     "all": false,
+     "zone": "zps244eov",
+     "type": "external",
+     "teamRole": ""
+    },
+    {
+     "id": "pk30aeww",
+     "k": "np1xb612e",
+     "name": "Madhulatha",
+     "role": "GBS Releases",
+     "areas": [],
+     "all": false,
+     "zone": "zps244eov",
+     "type": "external",
+     "teamRole": ""
+    },
+    {
+     "id": "ph5zz18o",
+     "k": "npkzbib5m",
+     "name": "Vijaya",
+     "role": "",
+     "areas": [
+      "EHS"
+     ],
+     "all": false,
+     "zone": "zps244eov",
+     "type": "external",
+     "teamRole": ""
+    },
+    {
+     "id": "p1ewqpus",
+     "k": "np0264cyj",
+     "name": "Maheswari",
+     "role": "GBS Releases",
+     "areas": [
+      "QM"
+     ],
+     "all": false,
+     "zone": "zps244eov",
+     "type": "external",
+     "teamRole": ""
+    },
+    {
+     "id": "p00zvvqv",
+     "k": "npd9p8322",
+     "name": "Intern 1",
+     "role": "Intern Role",
+     "areas": [],
+     "all": false,
+     "zone": "ext",
+     "type": "external",
+     "teamRole": ""
+    },
+    {
+     "id": "pg6wjrnu",
+     "k": "npf4i5hl8",
+     "name": "Intern 2",
+     "role": "Intern Role",
+     "areas": [],
+     "all": false,
+     "zone": "ext",
+     "type": "external",
+     "teamRole": ""
+    },
+    {
+     "id": "pks2vqo3",
+     "k": "h1",
+     "name": "Maxine",
+     "role": "Audit Email",
+     "areas": [
+      "Auth",
+      "EHS"
+     ],
+     "all": false,
+     "zone": "zp4m7q2f7",
+     "type": "external",
+     "teamRole": "secondary",
+     "externalAssignment": true
+    },
+    {
+     "id": "po3qpxhe",
+     "k": "npcw31x3b",
+     "name": "MF",
+     "role": "HR Oversight",
+     "areas": [
+      "HR"
+     ],
+     "all": false,
+     "zone": "zpzqbsrrx",
+     "type": "internal",
+     "teamRole": "secondary",
+     "internalKind": "hire"
+    },
+    {
+     "id": "pui07f81",
+     "k": "np2r51vfl",
+     "name": "Tonye Atiegoba",
+     "role": "BTP Governance Lead",
+     "areas": [],
+     "all": false,
+     "zone": "gov",
+     "type": "internal",
+     "teamRole": "primary",
+     "internalKind": "hire"
+    },
+    {
+     "id": "pzebqg8g",
+     "k": "npysnhs58",
+     "name": "Adria Casado",
+     "role": "BTP Developer",
+     "areas": [],
+     "all": false,
+     "zone": "zppkeni4c",
+     "type": "internal",
+     "teamRole": "primary",
+     "internalKind": "tenured"
+    },
+    {
+     "id": "pyad7agm",
+     "k": "np2q1rg32",
+     "name": "Savan Vekariya",
+     "role": "BTP Developer",
+     "areas": [],
+     "all": false,
+     "zone": "zp3r069k6",
+     "type": "internal",
+     "teamRole": "primary",
+     "internalKind": "tenured"
+    },
+    {
+     "id": "pk48bspo",
+     "k": "npzagh4gq",
+     "name": "Carles Marcilla",
+     "role": "BTP Developer",
+     "areas": [],
+     "all": false,
+     "zone": "zp3r069k6",
+     "type": "internal",
+     "teamRole": "primary",
+     "internalKind": "tenured"
+    },
+    {
+     "id": "pp4gkcu7",
+     "k": "nphkq280n",
+     "name": "BB - A2R Fiori",
+     "role": "",
+     "areas": [],
+     "all": false,
+     "zone": "fin",
+     "type": "internal",
+     "teamRole": "secondary",
+     "internalKind": "hire"
+    },
+    {
+     "id": "pupk1t4y",
+     "k": "npr23fqyg",
+     "name": "Tom Engels",
+     "role": "BTP Developer",
+     "areas": [],
+     "all": false,
+     "zone": "zppkeni4c",
+     "type": "internal",
+     "teamRole": "primary",
+     "internalKind": "tenured"
+    },
+    {
+     "id": "p00eswaz",
+     "k": "npnyw7xo0",
+     "name": "MF",
+     "role": "Spare Parts, Audit Dev",
+     "areas": [],
+     "all": false,
+     "zone": "zp4m7q2f7",
+     "type": "internal",
+     "teamRole": "secondary",
+     "internalKind": "hire"
+    },
+    {
+     "id": "p7xik9ix",
+     "k": "npjx4wdqn",
+     "name": "AP",
+     "role": "Spare Parts",
+     "areas": [],
+     "all": false,
+     "zone": "zp4m7q2f7",
+     "type": "internal",
+     "teamRole": "secondary",
+     "internalKind": "hire"
+    },
+    {
+     "id": "psugpyyq",
+     "k": "npzmdsxo7",
+     "name": "Internalization 2",
+     "role": "Core Developer",
+     "areas": [],
+     "all": false,
+     "zone": "zp5ukwrzd",
+     "type": "planned",
+     "teamRole": "primary"
+    },
+    {
+     "id": "pcy0mcz1",
+     "k": "np1dzd0c4",
+     "name": "Vidhya",
+     "role": "SolMan",
+     "areas": [],
+     "all": false,
+     "zone": "zps244eov",
+     "type": "external",
+     "internalKind": "",
+     "teamRole": ""
+    },
+    {
+     "id": "ppt1dsin",
+     "k": "npfqns38u",
+     "name": "Hapsa",
+     "role": "Bundle",
+     "areas": [],
+     "all": false,
+     "zone": "zps244eov",
+     "type": "external",
+     "internalKind": "",
+     "teamRole": ""
+    },
+    {
+     "id": "pkkav5d3",
+     "k": "npwk94yrj",
+     "name": "Rutuja",
+     "role": "GBS DE and Hardening",
+     "areas": [],
+     "all": false,
+     "zone": "zpe9crylu",
+     "type": "external",
+     "internalKind": "",
+     "teamRole": ""
+    },
+    {
+     "id": "prxgo7y1",
+     "k": "npwk94yrj",
+     "name": "Rutuja",
+     "role": "GBS DE and Hardening",
+     "areas": [],
+     "all": false,
+     "zone": "zpovwgntq",
+     "type": "external",
+     "internalKind": "",
+     "teamRole": "secondary",
+     "externalAssignment": true
+    },
+    {
+     "id": "p3kkdvfs",
+     "k": "npz6ao94v",
+     "name": "Mayra",
+     "role": "",
+     "areas": [],
+     "all": false,
+     "zone": "zpe9crylu",
+     "type": "external",
+     "internalKind": "",
+     "teamRole": ""
+    },
+    {
+     "id": "pupftrmr",
+     "k": "np0jvkind",
+     "name": "Spandana",
+     "role": "",
+     "areas": [],
+     "all": false,
+     "zone": "zpe9crylu",
+     "type": "external",
+     "internalKind": "",
+     "teamRole": ""
+    },
+    {
+     "id": "pyz422ja",
+     "k": "npbagvzoa",
+     "name": "Roman",
+     "role": "",
+     "areas": [],
+     "all": false,
+     "zone": "zpe9crylu",
+     "type": "external",
+     "internalKind": "",
+     "teamRole": ""
+    },
+    {
+     "id": "pfzaxf5r",
+     "k": "npup4hqge",
+     "name": "D Raju",
+     "role": "",
+     "areas": [],
+     "all": false,
+     "zone": "zpe9crylu",
+     "type": "external",
+     "internalKind": "",
+     "teamRole": ""
+    },
+    {
+     "id": "pev02b7s",
+     "k": "np9g95oji",
+     "name": "Sam",
+     "role": "WeSave, Vistext Plus",
+     "areas": [],
+     "all": false,
+     "zone": "zpm3p6dqa",
+     "type": "external",
+     "internalKind": "",
+     "teamRole": ""
+    },
+    {
+     "id": "pmmvwi59",
+     "k": "npg7pyft9",
+     "name": "Pauline",
+     "role": "ECLASS, Anomaly Detection",
+     "areas": [],
+     "all": false,
+     "zone": "zpm3p6dqa",
+     "type": "external",
+     "internalKind": "",
+     "teamRole": ""
+    },
+    {
+     "id": "pkqn3iz5",
+     "k": "npcsrtluh",
+     "name": "Navneesh",
+     "role": "Sourcing Card, Vistex Plus",
+     "areas": [],
+     "all": false,
+     "zone": "zpm3p6dqa",
+     "type": "external",
+     "internalKind": "",
+     "teamRole": ""
+    },
+    {
+     "id": "p07gpdy3",
+     "k": "npkovxyxd",
+     "name": "Allison",
+     "role": "SEP Cockpit",
+     "areas": [],
+     "all": false,
+     "zone": "zpm3p6dqa",
+     "type": "external",
+     "internalKind": "",
+     "teamRole": ""
+    },
+    {
+     "id": "pq0kpzk4",
+     "k": "npgc60fw3",
+     "name": "Alicia",
+     "role": "STTS",
+     "areas": [],
+     "all": false,
+     "zone": "zpm3p6dqa",
+     "type": "external",
+     "internalKind": "",
+     "teamRole": ""
+    },
+    {
+     "id": "pvwuzi5b",
+     "k": "npv7109lo",
+     "name": "Jakeer",
+     "role": "TOCS",
+     "areas": [],
+     "all": false,
+     "zone": "zpm3p6dqa",
+     "type": "external",
+     "internalKind": "",
+     "teamRole": ""
+    },
+    {
+     "id": "pkkgzvtt",
+     "k": "npedd8axk",
+     "name": "Faye Adao (FA)",
+     "role": "Anomaly Detection",
+     "areas": [
+      "A2R"
+     ],
+     "all": false,
+     "zone": "zpzbpbrxc",
+     "type": "internal",
+     "internalKind": "hire",
+     "teamRole": "primary"
+    }
+   ]
+  },
+  {
+   "title": "Phase 3 · Jan 2028 - Dec 2028",
+   "note": "",
+   "people": [
+    {
+     "id": "pndady98",
+     "k": "t0",
+     "name": "Narayana Tagarathi",
+     "role": "ABAP Governance Lead",
+     "areas": [],
+     "all": true,
+     "zone": "gov",
+     "type": "internal",
+     "teamRole": "primary",
+     "internalKind": "tenured"
+    },
+    {
+     "id": "p69nbv3c",
+     "k": "t1",
+     "name": "Bink Razon (BR)",
+     "role": "TecFcn - FinPlan",
+     "areas": [
+      "QM",
+      "A2R",
+      "O2C",
+      "COPE"
+     ],
+     "all": false,
+     "zone": "zpzbpbrxc",
+     "type": "internal",
+     "teamRole": "primary",
+     "internalKind": "tenured"
+    },
+    {
+     "id": "py4ha3nq",
+     "k": "t2",
+     "name": "Bhernard Baruela (BB)",
+     "role": "TMS Development",
+     "areas": [
+      "EWM",
+      "ILOL",
+      "A2R"
+     ],
+     "all": false,
+     "zone": "log",
+     "type": "internal",
+     "teamRole": "primary",
+     "internalKind": "tenured"
+    },
+    {
+     "id": "ph2etfbe",
+     "k": "t3",
+     "name": "Kathrine Abesamis (KA)",
+     "role": "TecFcn A2R",
+     "areas": [
+      "Auth",
+      "A2R"
+     ],
+     "all": false,
+     "zone": "fin",
+     "type": "internal",
+     "teamRole": "primary",
+     "internalKind": "tenured"
+    },
+    {
+     "id": "piffrwwm",
+     "k": "t4",
+     "name": "Albert Panos (AP)",
+     "role": "TecFcn O2C Fiori App",
+     "areas": [
+      "QM",
+      "PM",
+      "O2C"
+     ],
+     "all": false,
+     "zone": "sd",
+     "type": "internal",
+     "teamRole": "primary",
+     "internalKind": "tenured"
+    },
+    {
+     "id": "pf0z0w2e",
+     "k": "t5",
+     "name": "Montserrat Fabrega (MF)",
+     "role": "O2C Fiori ",
+     "areas": [
+      "PM",
+      "EHS",
+      "HR",
+      "O2C"
+     ],
+     "all": false,
+     "zone": "sd",
+     "type": "internal",
+     "teamRole": "primary",
+     "internalKind": "tenured"
+    },
+    {
+     "id": "pntz5sqc",
+     "k": "t6",
+     "name": "Arnie Alano (AA)",
+     "role": "TecFcn A2R",
+     "areas": [
+      "EWM",
+      "A2R"
+     ],
+     "all": false,
+     "zone": "fin",
+     "type": "internal",
+     "teamRole": "primary",
+     "internalKind": "tenured"
+    },
+    {
+     "id": "px5ojfke",
+     "k": "h1",
+     "name": "Maxine",
+     "role": "Audit Email",
+     "areas": [
+      "Auth",
+      "EHS"
+     ],
+     "all": false,
+     "zone": "ext",
+     "type": "external"
+    },
+    {
+     "id": "plrk3upl",
+     "k": "h8",
+     "name": "Internalization 1",
+     "role": "Core Developer",
+     "areas": [],
+     "all": false,
+     "zone": "zp5ukwrzd",
+     "type": "planned",
+     "teamRole": "primary"
+    },
+    {
+     "id": "pni0qq4x",
+     "k": "np9cax3kk",
+     "name": "Bryan Asedillo",
+     "role": "Head of SAP Dev Run",
+     "areas": [],
+     "all": false,
+     "zone": "lead",
+     "type": "internal",
+     "teamRole": "primary",
+     "internalKind": "tenured"
+    },
+    {
+     "id": "plget5t0",
+     "k": "npnigmg47",
+     "name": "Harjyot Sital",
+     "role": "BTP Governance Lead",
+     "areas": [],
+     "all": true,
+     "zone": "zpd745ijp",
+     "type": "internal",
+     "internalKind": "tenured",
+     "teamRole": "primary"
+    },
+    {
+     "id": "pbs4gkyy",
+     "k": "np5ltr95e",
+     "name": "Albert Masdeu",
+     "role": "Head of SAP Dev Build",
+     "areas": [],
+     "all": false,
+     "zone": "lead",
+     "type": "internal",
+     "teamRole": "primary",
+     "internalKind": "tenured"
+    },
+    {
+     "id": "p7bcr1j0",
+     "k": "npwjnt7r5",
+     "name": "ABAP - Backfill",
+     "role": "Core Developer",
+     "areas": [],
+     "all": false,
+     "zone": "zp5ukwrzd",
+     "type": "internal",
+     "teamRole": "primary",
+     "internalKind": "hire"
+    },
+    {
+     "id": "piiv1r5t",
+     "k": "npxglbzmv",
+     "name": "Jyothi",
+     "role": "HR Dev",
+     "areas": [
+      "HR"
+     ],
+     "all": false,
+     "zone": "zp28jlj7t",
+     "type": "external",
+     "useSpecificCost": true,
+     "externalCost": "60000"
+    },
+    {
+     "id": "puzd2ifi",
+     "k": "npqufu2jz",
+     "name": "Dipesh Naik",
+     "role": "HR Dev",
+     "areas": [
+      "HR"
+     ],
+     "all": false,
+     "zone": "zp28jlj7t",
+     "type": "external",
+     "useSpecificCost": true,
+     "externalCost": "150000"
+    },
+    {
+     "id": "pp3n3yev",
+     "k": "npwzr4txn",
+     "name": "Siva Rao",
+     "role": "IBIS & COPE",
+     "areas": [
+      "COPE",
+      "O2C",
+      "A2R"
+     ],
+     "all": false,
+     "zone": "zp28jlj7t",
+     "type": "external",
+     "useSpecificCost": true,
+     "externalCost": "100000"
+    },
+    {
+     "id": "pl7vsrra",
+     "k": "np7od19jy",
+     "name": "AA",
+     "role": "IBIS Invoice, SolMan",
+     "areas": [],
+     "all": false,
+     "zone": "zpzqbsrrx",
+     "type": "internal",
+     "teamRole": "secondary",
+     "internalKind": "hire"
+    },
+    {
+     "id": "p9bbvxd5",
+     "k": "npxriofay",
+     "name": "BP",
+     "role": "OS Support",
+     "areas": [],
+     "all": false,
+     "zone": "pm",
+     "type": "internal",
+     "teamRole": "secondary",
+     "internalKind": "hire"
+    },
+    {
+     "id": "preyaprt",
+     "k": "np1c6axuy",
+     "name": "MF",
+     "role": "O2C Dev Support",
+     "areas": [],
+     "all": false,
+     "zone": "sd",
+     "type": "internal",
+     "teamRole": "secondary",
+     "internalKind": "hire"
+    },
+    {
+     "id": "pp7zz8tm",
+     "k": "npmi8qd2m",
+     "name": "AP",
+     "role": "OS Support",
+     "areas": [],
+     "all": false,
+     "zone": "pm",
+     "type": "internal",
+     "teamRole": "secondary",
+     "internalKind": "hire"
+    },
+    {
+     "id": "payw4luf",
+     "k": "npw2f4ssp",
+     "name": "KA",
+     "role": "GBS Hardening",
+     "areas": [],
+     "all": false,
+     "zone": "zpovwgntq",
+     "type": "internal",
+     "teamRole": "secondary",
+     "internalKind": "hire"
+    },
+    {
+     "id": "pl8rjio0",
+     "k": "npupu7icl",
+     "name": "Prathiba",
+     "role": "GBS Releases",
+     "areas": [
+      "PM"
+     ],
+     "all": false,
+     "zone": "zps244eov",
+     "type": "external",
+     "teamRole": "",
+     "useSpecificCost": true,
+     "externalCost": "9000"
+    },
+    {
+     "id": "p93os108",
+     "k": "h1",
+     "name": "Maxine",
+     "role": "GBS Hardening",
+     "areas": [
+      "Auth",
+      "EHS"
+     ],
+     "all": false,
+     "zone": "zpovwgntq",
+     "type": "external",
+     "teamRole": "secondary",
+     "externalAssignment": true
+    },
+    {
+     "id": "pyzckzii",
+     "k": "np9gudd1b",
+     "name": "Amruthavarshini",
+     "role": "GBS Releases",
+     "areas": [],
+     "all": false,
+     "zone": "zps244eov",
+     "type": "external",
+     "teamRole": "",
+     "useSpecificCost": true,
+     "externalCost": "9000"
+    },
+    {
+     "id": "px22wfw5",
+     "k": "npzx69593",
+     "name": "Tiwari",
+     "role": "GBS Releases",
+     "areas": [
+      "O2C"
+     ],
+     "all": false,
+     "zone": "zps244eov",
+     "type": "external",
+     "teamRole": "",
+     "useSpecificCost": true,
+     "externalCost": "9000"
+    },
+    {
+     "id": "ppl1sipz",
+     "k": "npxglbzmv",
+     "name": "Jyothi",
+     "role": "HR Dev",
+     "areas": [
+      "HR"
+     ],
+     "all": false,
+     "zone": "zpzqbsrrx",
+     "type": "external",
+     "useSpecificCost": true,
+     "externalCost": "60000",
+     "teamRole": "secondary",
+     "externalAssignment": true
+    },
+    {
+     "id": "p4oy4wpb",
+     "k": "npqufu2jz",
+     "name": "Dipesh Naik",
+     "role": "HR Dev",
+     "areas": [
+      "HR"
+     ],
+     "all": false,
+     "zone": "zpzqbsrrx",
+     "type": "external",
+     "useSpecificCost": true,
+     "externalCost": "150000",
+     "teamRole": "secondary",
+     "externalAssignment": true
+    },
+    {
+     "id": "pgj2g68z",
+     "k": "npwzr4txn",
+     "name": "Siva Rao",
+     "role": "IBIS & COPE",
+     "areas": [],
+     "all": false,
+     "zone": "zpzqbsrrx",
+     "type": "external",
+     "useSpecificCost": true,
+     "externalCost": "100000",
+     "teamRole": "secondary",
+     "externalAssignment": true
+    },
+    {
+     "id": "pkvxkymj",
+     "k": "npu28ozsq",
+     "name": "Victor",
+     "role": "GBS Releases",
+     "areas": [],
+     "all": false,
+     "zone": "zps244eov",
+     "type": "external",
+     "teamRole": "",
+     "useSpecificCost": true,
+     "externalCost": "9000"
+    },
+    {
+     "id": "pjbeq5b4",
+     "k": "npfwemfiq",
+     "name": "Garima",
+     "role": "GBS Releases",
+     "areas": [],
+     "all": false,
+     "zone": "zps244eov",
+     "type": "external",
+     "teamRole": ""
+    },
+    {
+     "id": "pxtsfzsy",
+     "k": "npwdq7mot",
+     "name": "Shraddha",
+     "role": "GBS Releases",
+     "areas": [],
+     "all": false,
+     "zone": "zps244eov",
+     "type": "external",
+     "teamRole": ""
+    },
+    {
+     "id": "p5stpvqm",
+     "k": "npvr67rpr",
+     "name": "Sanchita",
+     "role": "GBS Releases",
+     "areas": [
+      "O2C"
+     ],
+     "all": false,
+     "zone": "zps244eov",
+     "type": "external",
+     "teamRole": ""
+    },
+    {
+     "id": "pw9s8qo5",
+     "k": "np1xb612e",
+     "name": "Madhulatha",
+     "role": "GBS Releases",
+     "areas": [],
+     "all": false,
+     "zone": "zps244eov",
+     "type": "external",
+     "teamRole": ""
+    },
+    {
+     "id": "pebgzasv",
+     "k": "npkzbib5m",
+     "name": "Vijaya",
+     "role": "",
+     "areas": [
+      "EHS"
+     ],
+     "all": false,
+     "zone": "zps244eov",
+     "type": "external",
+     "teamRole": ""
+    },
+    {
+     "id": "pm3vpmjd",
+     "k": "np0264cyj",
+     "name": "Maheswari",
+     "role": "GBS Releases",
+     "areas": [
+      "QM"
+     ],
+     "all": false,
+     "zone": "zps244eov",
+     "type": "external",
+     "teamRole": ""
+    },
+    {
+     "id": "pcl92xh5",
+     "k": "npd9p8322",
+     "name": "Intern 1",
+     "role": "Intern Role",
+     "areas": [],
+     "all": false,
+     "zone": "ext",
+     "type": "external",
+     "teamRole": ""
+    },
+    {
+     "id": "pfgga0hq",
+     "k": "npf4i5hl8",
+     "name": "Intern 2",
+     "role": "Intern Role",
+     "areas": [],
+     "all": false,
+     "zone": "ext",
+     "type": "external",
+     "teamRole": ""
+    },
+    {
+     "id": "p2nanbt0",
+     "k": "h1",
+     "name": "Maxine",
+     "role": "Audit Email",
+     "areas": [
+      "Auth",
+      "EHS"
+     ],
+     "all": false,
+     "zone": "zp4m7q2f7",
+     "type": "external",
+     "teamRole": "secondary",
+     "externalAssignment": true
+    },
+    {
+     "id": "pd0fs2qc",
+     "k": "npcw31x3b",
+     "name": "MF",
+     "role": "HR Oversight",
+     "areas": [
+      "HR"
+     ],
+     "all": false,
+     "zone": "zpzqbsrrx",
+     "type": "internal",
+     "teamRole": "secondary",
+     "internalKind": "hire"
+    },
+    {
+     "id": "pfxrx06u",
+     "k": "np2r51vfl",
+     "name": "Tonye Atiegoba",
+     "role": "BTP Governance Lead",
+     "areas": [],
+     "all": false,
+     "zone": "gov",
+     "type": "internal",
+     "teamRole": "primary",
+     "internalKind": "hire"
+    },
+    {
+     "id": "pcnp2hrk",
+     "k": "npysnhs58",
+     "name": "Adria Casado",
+     "role": "BTP Developer",
+     "areas": [],
+     "all": false,
+     "zone": "zppkeni4c",
+     "type": "internal",
+     "teamRole": "primary",
+     "internalKind": "tenured"
+    },
+    {
+     "id": "pf1k2ytw",
+     "k": "np2q1rg32",
+     "name": "Savan Vekariya",
+     "role": "BTP Developer",
+     "areas": [],
+     "all": false,
+     "zone": "zp3r069k6",
+     "type": "internal",
+     "teamRole": "primary",
+     "internalKind": "tenured"
+    },
+    {
+     "id": "p0duazv2",
+     "k": "npzagh4gq",
+     "name": "Carles Marcilla",
+     "role": "BTP Developer",
+     "areas": [],
+     "all": false,
+     "zone": "zp3r069k6",
+     "type": "internal",
+     "teamRole": "primary",
+     "internalKind": "tenured"
+    },
+    {
+     "id": "ptcamo66",
+     "k": "nphkq280n",
+     "name": "BB - A2R Fiori",
+     "role": "",
+     "areas": [],
+     "all": false,
+     "zone": "fin",
+     "type": "internal",
+     "teamRole": "secondary",
+     "internalKind": "hire"
+    },
+    {
+     "id": "pmartcgx",
+     "k": "npr23fqyg",
+     "name": "Tom Engels",
+     "role": "BTP Developer",
+     "areas": [],
+     "all": false,
+     "zone": "zppkeni4c",
+     "type": "internal",
+     "teamRole": "primary",
+     "internalKind": "tenured"
+    },
+    {
+     "id": "pjnf6c2b",
+     "k": "npnyw7xo0",
+     "name": "MF",
+     "role": "Spare Parts, Audit Dev",
+     "areas": [],
+     "all": false,
+     "zone": "zp4m7q2f7",
+     "type": "internal",
+     "teamRole": "secondary",
+     "internalKind": "hire"
+    },
+    {
+     "id": "pc7drcs7",
+     "k": "npjx4wdqn",
+     "name": "AP",
+     "role": "Spare Parts",
+     "areas": [],
+     "all": false,
+     "zone": "zp4m7q2f7",
+     "type": "internal",
+     "teamRole": "secondary",
+     "internalKind": "hire"
+    },
+    {
+     "id": "pnzb64o7",
+     "k": "npzmdsxo7",
+     "name": "Internalization 2",
+     "role": "Core Developer",
+     "areas": [],
+     "all": false,
+     "zone": "zp5ukwrzd",
+     "type": "planned",
+     "teamRole": "primary"
+    },
+    {
+     "id": "pvc3xtgd",
+     "k": "np1dzd0c4",
+     "name": "Vidhya",
+     "role": "SolMan",
+     "areas": [],
+     "all": false,
+     "zone": "zps244eov",
+     "type": "external",
+     "internalKind": "",
+     "teamRole": ""
+    },
+    {
+     "id": "p5xz2iqv",
+     "k": "npfqns38u",
+     "name": "Hapsa",
+     "role": "Bundle",
+     "areas": [],
+     "all": false,
+     "zone": "zps244eov",
+     "type": "external",
+     "internalKind": "",
+     "teamRole": ""
+    },
+    {
+     "id": "pbpmjixo",
+     "k": "npwk94yrj",
+     "name": "Rutuja",
+     "role": "GBS DE and Hardening",
+     "areas": [],
+     "all": false,
+     "zone": "zpe9crylu",
+     "type": "external",
+     "internalKind": "",
+     "teamRole": ""
+    },
+    {
+     "id": "pwikterr",
+     "k": "npwk94yrj",
+     "name": "Rutuja",
+     "role": "GBS DE and Hardening",
+     "areas": [],
+     "all": false,
+     "zone": "zpovwgntq",
+     "type": "external",
+     "internalKind": "",
+     "teamRole": "secondary",
+     "externalAssignment": true
+    },
+    {
+     "id": "pgxygcsz",
+     "k": "npz6ao94v",
+     "name": "Mayra",
+     "role": "",
+     "areas": [],
+     "all": false,
+     "zone": "zpe9crylu",
+     "type": "external",
+     "internalKind": "",
+     "teamRole": ""
+    },
+    {
+     "id": "psqrcv1s",
+     "k": "np0jvkind",
+     "name": "Spandana",
+     "role": "",
+     "areas": [],
+     "all": false,
+     "zone": "zpe9crylu",
+     "type": "external",
+     "internalKind": "",
+     "teamRole": ""
+    },
+    {
+     "id": "pvs3rufk",
+     "k": "npbagvzoa",
+     "name": "Roman",
+     "role": "",
+     "areas": [],
+     "all": false,
+     "zone": "zpe9crylu",
+     "type": "external",
+     "internalKind": "",
+     "teamRole": ""
+    },
+    {
+     "id": "ppmjsxre",
+     "k": "npup4hqge",
+     "name": "D Raju",
+     "role": "",
+     "areas": [],
+     "all": false,
+     "zone": "zpe9crylu",
+     "type": "external",
+     "internalKind": "",
+     "teamRole": ""
+    },
+    {
+     "id": "pybe657i",
+     "k": "np9g95oji",
+     "name": "Sam",
+     "role": "WeSave, Vistext Plus",
+     "areas": [],
+     "all": false,
+     "zone": "zpm3p6dqa",
+     "type": "external",
+     "internalKind": "",
+     "teamRole": ""
+    },
+    {
+     "id": "p2tqb34q",
+     "k": "npg7pyft9",
+     "name": "Pauline",
+     "role": "ECLASS, Anomaly Detection",
+     "areas": [],
+     "all": false,
+     "zone": "zpm3p6dqa",
+     "type": "external",
+     "internalKind": "",
+     "teamRole": ""
+    },
+    {
+     "id": "psmfa73k",
+     "k": "npcsrtluh",
+     "name": "Navneesh",
+     "role": "Sourcing Card, Vistex Plus",
+     "areas": [],
+     "all": false,
+     "zone": "zpm3p6dqa",
+     "type": "external",
+     "internalKind": "",
+     "teamRole": ""
+    },
+    {
+     "id": "pn5ei523",
+     "k": "npkovxyxd",
+     "name": "Allison",
+     "role": "SEP Cockpit",
+     "areas": [],
+     "all": false,
+     "zone": "zpm3p6dqa",
+     "type": "external",
+     "internalKind": "",
+     "teamRole": ""
+    },
+    {
+     "id": "ptrqs4z9",
+     "k": "npgc60fw3",
+     "name": "Alicia",
+     "role": "STTS",
+     "areas": [],
+     "all": false,
+     "zone": "zpm3p6dqa",
+     "type": "external",
+     "internalKind": "",
+     "teamRole": ""
+    },
+    {
+     "id": "ppkyaaqu",
+     "k": "npv7109lo",
+     "name": "Jakeer",
+     "role": "TOCS",
+     "areas": [],
+     "all": false,
+     "zone": "zpm3p6dqa",
+     "type": "external",
+     "internalKind": "",
+     "teamRole": ""
+    },
+    {
+     "id": "pp7my1l0",
+     "k": "npedd8axk",
+     "name": "Faye Adao (FA)",
+     "role": "Anomaly Detection",
+     "areas": [
+      "A2R"
+     ],
+     "all": false,
+     "zone": "zpzbpbrxc",
+     "type": "internal",
+     "internalKind": "hire",
+     "teamRole": "primary"
+    }
+   ]
+  }
+ ],
+ "financials": true
+}

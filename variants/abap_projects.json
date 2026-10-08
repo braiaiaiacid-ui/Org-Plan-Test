@@ -1,0 +1,520 @@
+{
+ "view": "board",
+ "zoom": 75,
+ "selP": null,
+ "selJ": "qm",
+ "open": {
+  "xqpwivt": true,
+  "x0ixxlx": true,
+  "x4e2xkg": true,
+  "xmle5uz": true,
+  "xk452dt": true,
+  "xbqfaug": true,
+  "NN": true,
+  "xlsnuu6": true,
+  "xhf4ac9": true,
+  "xjgvqu2": false,
+  "XA": false,
+  "xvtyx8p": true,
+  "xlrtr7g": true,
+  "NT": false,
+  "xj8qtsd": false,
+  "xp2q85j": false,
+  "LR": false,
+  "xuecgbz": false,
+  "xfo18i3": false,
+  "BB": false,
+  "KA": false,
+  "AP": false,
+  "MF": false,
+  "AA": false
+ },
+ "people": [
+  {
+   "id": "NT",
+   "name": "Narayana",
+   "role": "ABAP Governance",
+   "areas": "All",
+   "type": "int",
+   "sen": "Senior",
+   "lead": true,
+   "cap": 50,
+   "cost": 0,
+   "notes": ""
+  },
+  {
+   "id": "LR",
+   "name": "Bink",
+   "role": "Developer ",
+   "areas": "QM,FIN,SD",
+   "type": "int",
+   "sen": "Senior",
+   "lead": true,
+   "cap": 100,
+   "cost": 0,
+   "notes": ""
+  },
+  {
+   "id": "BB",
+   "name": "Bhernard",
+   "role": "Developer",
+   "areas": "EWM, LE, TMS, FIN",
+   "type": "int",
+   "sen": "Senior",
+   "lead": true,
+   "cap": 100,
+   "cost": 0,
+   "notes": "",
+   "sourceRef": "t2@sd"
+  },
+  {
+   "id": "KA",
+   "name": "Kathrine",
+   "role": "Developer ",
+   "areas": "FIN, Auth",
+   "type": "int",
+   "sen": "Senior",
+   "lead": false,
+   "cap": 100,
+   "cost": 0,
+   "notes": "HC Delivery · FIN and Auth · Tenured",
+   "sourceRef": "t3@fin"
+  },
+  {
+   "id": "AP",
+   "name": "Albert",
+   "role": "O2C Dev Lead",
+   "areas": "QM, PM",
+   "type": "int",
+   "sen": "Senior",
+   "lead": false,
+   "cap": 100,
+   "cost": 0,
+   "notes": "HC Delivery · SD and QM · Tenured",
+   "sourceRef": "t4@sd"
+  },
+  {
+   "id": "MF",
+   "name": "Montserrat",
+   "role": "Domain owner",
+   "areas": "HR, SD, EHS, PM",
+   "type": "int",
+   "sen": "Senior",
+   "lead": false,
+   "cap": 100,
+   "cost": 0,
+   "notes": "HC Delivery · PM, EHS, HR · Tenured",
+   "sourceRef": "t5@pm"
+  },
+  {
+   "id": "AA",
+   "name": "Arnie",
+   "role": "Domain owner",
+   "areas": "EWM, FIN, Cross-app",
+   "type": "int",
+   "sen": "Senior",
+   "lead": false,
+   "cap": 100,
+   "cost": 0,
+   "notes": "HC Delivery · Logistics (EWM, LE, TMS) · Tenured",
+   "sourceRef": "t6@log"
+  },
+  {
+   "id": "XA",
+   "name": "MA",
+   "role": "GBS Hardening, Dev Support",
+   "areas": "EWM,LE",
+   "type": "ext",
+   "sen": "Junior",
+   "lead": false,
+   "cap": 100,
+   "cost": 40000,
+   "notes": "",
+   "fte": 1
+  },
+  {
+   "id": "xjgvqu2",
+   "name": "Backfill",
+   "role": "Developer",
+   "areas": "All",
+   "type": "int",
+   "sen": "Mid",
+   "lead": false,
+   "cap": 100,
+   "cost": 0,
+   "notes": "Core Developer - Any Area",
+   "sourceRef": "h1@fin"
+  },
+  {
+   "id": "xj8qtsd",
+   "name": "New 1",
+   "role": "Developer",
+   "areas": "",
+   "type": "int",
+   "sen": "Mid",
+   "lead": false,
+   "cap": 100,
+   "cost": 0,
+   "notes": "Any area",
+   "sourceRef": "npwjnt7r5@zp4m7q2f7"
+  },
+  {
+   "id": "xvd7jb8",
+   "name": "JK",
+   "role": "HR Dev",
+   "areas": "HR",
+   "type": "ext",
+   "sen": "Senior",
+   "lead": false,
+   "cap": 100,
+   "cost": 0,
+   "notes": "HC Delivery · DESAP · External",
+   "sourceRef": "npxglbzmv@plat",
+   "fte": 1
+  },
+  {
+   "id": "xfqe5kw",
+   "name": "DN",
+   "role": "HR Dev",
+   "areas": "HR",
+   "type": "ext",
+   "sen": "Senior",
+   "lead": false,
+   "cap": 50,
+   "cost": 0,
+   "notes": "HC Delivery · DESAP · External",
+   "sourceRef": "npqufu2jz@plat",
+   "fte": 0.5
+  },
+  {
+   "id": "x47gqp6",
+   "name": "SR",
+   "role": "IBIS & COPE",
+   "areas": "COPE, Cross-app",
+   "type": "ext",
+   "sen": "Senior",
+   "lead": false,
+   "cap": 100,
+   "cost": 0,
+   "notes": "HC Delivery · DESAP · External",
+   "sourceRef": "npwzr4txn@plat",
+   "fte": 1
+  },
+  {
+   "id": "xp2q85j",
+   "name": "New 2",
+   "role": "Core Dev",
+   "areas": "",
+   "type": "int",
+   "sen": "Mid",
+   "lead": false,
+   "cap": 100,
+   "cost": 0,
+   "notes": ""
+  },
+  {
+   "id": "xfo18i3",
+   "name": "ACN DF",
+   "role": "Temp augmentation",
+   "areas": "",
+   "type": "ext",
+   "sen": "Mid",
+   "lead": false,
+   "cap": 1000,
+   "cost": 30000,
+   "notes": "",
+   "fte": 10
+  }
+ ],
+ "projects": [
+  {
+   "id": "fin",
+   "name": "Spare Parts",
+   "size": "L",
+   "s": 0,
+   "e": 1,
+   "need": 1,
+   "areas": "PM",
+   "dep": [],
+   "notes": "",
+   "x": 255.66666666666666,
+   "y": 11,
+   "status": "Execution"
+  },
+  {
+   "id": "ewm",
+   "name": "GBS Hardening Analysis",
+   "size": "L",
+   "s": 0,
+   "e": 2,
+   "need": 1.5,
+   "areas": "AUTH",
+   "dep": [],
+   "notes": "",
+   "x": 246.33333333333334,
+   "y": 200.66666666666669,
+   "status": "Execution"
+  },
+  {
+   "id": "qm",
+   "name": "GBS Germany Hypercare",
+   "size": "M",
+   "s": 1,
+   "e": 4,
+   "need": 2,
+   "areas": "QM, FIN, HR",
+   "dep": [],
+   "notes": "",
+   "x": 256.6666666666667,
+   "y": 383.6666666666667,
+   "status": "Execution"
+  },
+  {
+   "id": "core",
+   "name": "Clean Core Remediation",
+   "size": "M",
+   "s": 4,
+   "e": 16,
+   "need": 1,
+   "areas": "",
+   "dep": [
+    "qm"
+   ],
+   "notes": "Evaluating CVA Analysis\nCoordianting with Solman Team on Changelogs and ATC\nUpdating Clean Core Guidelines",
+   "x": 811.3333333333334,
+   "y": 352,
+   "status": "Planned"
+  },
+  {
+   "id": "roll",
+   "name": "GBS Japan Deployment",
+   "size": "L",
+   "s": 2,
+   "e": 14,
+   "need": 5,
+   "areas": "",
+   "dep": [
+    "qm"
+   ],
+   "notes": "",
+   "x": 807.6666666666666,
+   "y": 588.6666666666666,
+   "status": "Planned"
+  },
+  {
+   "id": "xyeke7g",
+   "name": "GBS Hardening Implem",
+   "size": "M",
+   "s": 0,
+   "e": 5,
+   "need": 1,
+   "areas": "",
+   "dep": [
+    "ewm"
+   ],
+   "notes": "",
+   "x": 817.3333333333334,
+   "y": 180.33333333333331,
+   "status": "Planned"
+  },
+  {
+   "id": "xfz6997",
+   "name": "GBS Releases",
+   "size": "M",
+   "s": 2,
+   "e": 13,
+   "need": 2,
+   "areas": "",
+   "dep": [],
+   "notes": "",
+   "x": 263.66666666666663,
+   "y": 662,
+   "status": "Execution"
+  },
+  {
+   "id": "xli5mrx",
+   "name": "DESAP and Others",
+   "size": "M",
+   "s": 2,
+   "e": 13,
+   "need": 5,
+   "areas": "HR, COPE, PUR, SD",
+   "dep": [],
+   "notes": "IBIS Development\nCross Apps Development\nCIM Support",
+   "x": 811.6666666666666,
+   "y": 840,
+   "status": "Execution"
+  }
+ ],
+ "alloc": [
+  {
+   "id": "xf1rm72",
+   "p": "XA",
+   "j": "ewm",
+   "pct": 40
+  },
+  {
+   "id": "xl9ymd1",
+   "p": "MF",
+   "j": "fin",
+   "pct": 50
+  },
+  {
+   "id": "xyrresq",
+   "p": "AP",
+   "j": "fin",
+   "pct": 50
+  },
+  {
+   "id": "xocfd5s",
+   "p": "KA",
+   "j": "ewm",
+   "pct": 80
+  },
+  {
+   "id": "xz9bjuu",
+   "p": "KA",
+   "j": "roll",
+   "pct": 80
+  },
+  {
+   "id": "xy7wpy9",
+   "p": "AP",
+   "j": "roll",
+   "pct": 60
+  },
+  {
+   "id": "xrd40u7",
+   "p": "AA",
+   "j": "roll",
+   "pct": 60
+  },
+  {
+   "id": "xm250d7",
+   "p": "MF",
+   "j": "roll",
+   "pct": 60
+  },
+  {
+   "id": "x8jnmu2",
+   "p": "BB",
+   "j": "roll",
+   "pct": 60
+  },
+  {
+   "id": "xdnlc1a",
+   "p": "xjgvqu2",
+   "j": "core",
+   "pct": 20
+  },
+  {
+   "id": "xrk4yhi",
+   "p": "MF",
+   "j": "qm",
+   "pct": 30
+  },
+  {
+   "id": "xtjcbnu",
+   "p": "NT",
+   "j": "core",
+   "pct": 30
+  },
+  {
+   "id": "xl1tuhs",
+   "p": "AA",
+   "j": "core",
+   "pct": 20
+  },
+  {
+   "id": "xgpv3v5",
+   "p": "XA",
+   "j": "xyeke7g",
+   "pct": 30
+  },
+  {
+   "id": "x12yfzn",
+   "p": "BB",
+   "j": "qm",
+   "pct": 30
+  },
+  {
+   "id": "x47fwas",
+   "p": "AP",
+   "j": "qm",
+   "pct": 30
+  },
+  {
+   "id": "xc4cfkh",
+   "p": "KA",
+   "j": "qm",
+   "pct": 30
+  },
+  {
+   "id": "x65za4z",
+   "p": "LR",
+   "j": "qm",
+   "pct": 30
+  },
+  {
+   "id": "xov4rpx",
+   "p": "xjgvqu2",
+   "j": "xfz6997",
+   "pct": 50
+  },
+  {
+   "id": "xgu8mwu",
+   "p": "xp2q85j",
+   "j": "xfz6997",
+   "pct": 50
+  },
+  {
+   "id": "xf0z7zc",
+   "p": "xvd7jb8",
+   "j": "xli5mrx",
+   "pct": 50
+  },
+  {
+   "id": "xjl0axc",
+   "p": "xfqe5kw",
+   "j": "xli5mrx",
+   "pct": 50
+  },
+  {
+   "id": "x4gv6hp",
+   "p": "x47gqp6",
+   "j": "xli5mrx",
+   "pct": 50
+  },
+  {
+   "id": "xk1iosx",
+   "p": "xp2q85j",
+   "j": "xli5mrx",
+   "pct": 30
+  },
+  {
+   "id": "xost61n",
+   "p": "xj8qtsd",
+   "j": "xfz6997",
+   "pct": 50
+  },
+  {
+   "id": "xfws5hu",
+   "p": "AA",
+   "j": "xfz6997",
+   "pct": 20
+  },
+  {
+   "id": "xqy4b7g",
+   "p": "BB",
+   "j": "core",
+   "pct": 30
+  },
+  {
+   "id": "x3ufjbn",
+   "p": "xfo18i3",
+   "j": "xfz6997",
+   "pct": 50
+  }
+ ],
+ "propertiesOpen": true
+}
