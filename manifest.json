@@ -1,0 +1,39 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/teams/v1.30/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.30",
+  "version": "1.0.0",
+  "id": "d953fa6c-54bd-4b29-9040-31a4d7d8e6af",
+  "developer": {
+    "name": "Boehringer Ingelheim",
+    "websiteUrl": "https://www.boehringer-ingelheim.com",
+    "privacyUrl": "https://your-tenant.sharepoint.com/sites/your-site/SitePages/privacy.aspx",
+    "termsOfUseUrl": "https://your-tenant.sharepoint.com/sites/your-site/SitePages/terms.aspx"
+  },
+  "name": {
+    "short": "Org Planner",
+    "full": "Organizational Planner"
+  },
+  "description": {
+    "short": "Headcount and project planning for Org Planner.",
+    "full": "Plan headcount and project engagement with the Org Planner browser-based planning boards."
+  },
+  "icons": {
+    "color": "color.png",
+    "outline": "outline.png"
+  },
+  "accentColor": "#007A53",
+  "staticTabs": [
+    {
+      "entityId": "org-planner-home",
+      "name": "Org Planner",
+      "contentUrl": "https://your-tenant.sharepoint.com/sites/your-site/SiteAssets/OrgPlanner/index.html",
+      "websiteUrl": "https://your-tenant.sharepoint.com/sites/your-site/SiteAssets/OrgPlanner/index.html",
+      "scopes": [
+        "personal"
+      ]
+    }
+  ],
+  "validDomains": [
+    "your-tenant.sharepoint.com"
+  ]
+}
